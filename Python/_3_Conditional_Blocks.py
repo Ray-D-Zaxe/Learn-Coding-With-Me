@@ -1,5 +1,10 @@
 a, b, c = 10, 20, 30
-print(f'A is greater" if a > b else "B is greater" : {"A is greater" if a > b else "B is greater"}')
+
+# Short hand if
+if (b > a): print("B is greater")
+
+# Short hand if else
+print(f'"A is greater" if a > b else "B is greater" : {"A is greater" if a > b else "B is greater"}')
 
 if a > b:
     if a > c:

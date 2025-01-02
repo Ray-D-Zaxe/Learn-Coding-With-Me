@@ -182,3 +182,16 @@ print()
 a = print(7)
 a                               # Prints 7
 print(a)                        # Prints None
+
+
+a = b = 5
+id(a)                           # Address of a, same as b
+id(b)                           # Address of b, same as a
+
+a += 4
+id(a)                           # Address of a changed cuz of change in value
+id(b)                           # Address of b remained the same cuz no change in value
+
+b += 4
+id(a)                           # Address of a, same as b
+id(b)                           # Address of b, same as a

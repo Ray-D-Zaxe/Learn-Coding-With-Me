@@ -1,149 +1,132 @@
 print("Hello World")
 
-# Checking Variables
 
-print("For Variables : ")
+
+# Checking Variables
 
 a = 9
 b = 9
 c = a
 
-print(f"id(a) : {id(a)}")       # id() returns the address of the argument
-print(f"id(b) : {id(b)}")
-print(f"id(c) : {id(c)}")
+# id() returns the address of the argument
 
-print(f"a is b : {a is b}")
-print(f"b is c : {b is c}")
-print(f"c is a : {c is a}")
-print(f"a is b is c : {a is b is c}")
+id(a)                           # Returns the address of a
+id(b)                           # Address is same as a
+id(c)                           # Address is same as a
 
-print()
+a is b                          # Evalauted as True
+b is c                          # Evalauted as True
+c is a                          # Evalauted as True
+a is b is c                     # Evalauted as True
 
 
 
 # Checking Lists
 
-print("For Lists : ")
-
 lst1 = [6, 9]
 lst2 = [6, 9]
 lst3 = lst1
 
-print(f"id(lst1) : {id(lst1)}")
-print(f"id(lst2) : {id(lst2)}")
-print(f"id(lst3) : {id(lst3)}")
+id(lst1)                        # returns address of lst1
+id(lst2)                        # address different from lst1
+id(lst3)                        # address same as lst1
 
-print(f"lst1 is lst2 : {lst1 is lst2}")
-print(f"lst2 is lst3 : {lst2 is lst3}")
-print(f"lst3 is lst1 : {lst3 is lst1}")
-print(f"lst1 is lst2 is lst3 : {lst1 is lst2 is lst3}")
-
-print()
+lst1 is lst2                    # Evalauted as False
+lst2 is lst3                    # Evalauted as False
+lst3 is lst1                    # Evalauted as True
+lst1 is lst2 is lst3            # Evalauted as False
 
 
 
-# Checking Tupils
-
-print("For Tupils : ")
+# Checking Tuples
 
 tpl1 = (6, 9)
 tpl2 = (6, 9)
 tpl3 = tpl1
 
-print(f"id(tpl1) : {id(tpl1)}")
-print(f"id(tpl2) : {id(tpl2)}")
-print(f"id(tpl3) : {id(tpl3)}")
+id(tpl1)                        # returns address of tpl1
+id(tpl2)                        # address same as tpl1
+id(tpl3)                        # address same as tpl1
 
-print(f"tpl1 is tpl2 : {tpl1 is tpl2}")
-print(f"tpl2 is tpl3 : {tpl2 is tpl3}")
-print(f"tpl3 is tpl1 : {tpl3 is tpl1}")
-print(f"tpl1 is tpl2 is tpl3 : {tpl1 is tpl2 is tpl3}")
-
-print()
+tpl1 is tpl2                    # Evalauted as True
+tpl2 is tpl3                    # Evalauted as True
+tpl3 is tpl1                    # Evalauted as True
+tpl1 is tpl2 is tpl3            # Evalauted as True
 
 
 
 # Checking Dictonary
 
-print("For Dictonary : ")
-
 dict1 = {'c' : 7}
 dict2 = {'c' : 7}
 dict3 = dict1
 
-print(f"id(dict1) : {id(dict1)}")
-print(f"id(dict2) : {id(dict2)}")
-print(f"id(dict3) : {id(dict3)}")
+id(dict1)                       # returns address of dict1
+id(dict2)                       # address different from dict1
+id(dict3)                       # address same as dict1
 
-print(f"dict1 is dict2 : {dict1 is dict2}")
-print(f"dict2 is dict3 : {dict2 is dict3}")
-print(f"dict3 is dict1 : {dict3 is dict1}")
-print(f"dict1 is dict2 is dict3 : {dict1 is dict2 is dict3}")
-
-print()
+dict1 is dict2                  # Evalauted as False
+dict2 is dict3                  # Evalauted as False
+dict3 is dict1                  # Evalauted as True
+dict1 is dict2 is dict3         # Evalauted as False
 
 
 
 # Checking Set
 
-print("For Set : ")
-
 set1 = {6, 9}
 set2 = {6, 9}
 set3 = set1
 
-print(f"id(set1) : {id(set1)}")
-print(f"id(set2) : {id(set2)}")
-print(f"id(set3) : {id(set3)}")
+id(set1)                        # returns address of set1
+id(set2)                        # address different from set1
+id(set3)                        # address same as set1
 
-print(f"set1 is set2 : {set1 is set2}")
-print(f"set2 is set3 : {set2 is set3}")
-print(f"set3 is set1 : {set3 is set1}")
-print(f"set1 is set2 is set3 : {set1 is set2 is set3}")
-
-print()
+set1 is set2                    # Evalauted as False
+set2 is set3                    # Evalauted as False
+set3 is set1                    # Evalauted as True
+set1 is set2 is set3            # Evalauted as False
 
 
 
 # Checking FrozenSet
 
-print("For FrozenSet : ")
-
 fset1 = frozenset([6, 9])
 fset2 = frozenset([6, 9])
 fset3 = fset1
 
-print(f"id(fset1) : {id(fset1)}")
-print(f"id(fset2) : {id(fset2)}")
-print(f"id(fset3) : {id(fset3)}")
+id(fset1)                       # returns address of fset1
+id(fset2)                       # address different from fset1
+id(fset3)                       # address same as fset1
 
-print(f"fset1 is fset2 : {fset1 is fset2}")
-print(f"fset2 is fset3 : {fset2 is fset3}")
-print(f"fset3 is fset1 : {fset3 is fset1}")
-print(f"fset1 is fset2 is fset3 : {fset1 is fset2 is fset3}")
-
-print()
+fset1 is fset2                  # Evalauted as False
+fset2 is fset3                  # Evalauted as False
+fset3 is fset1                  # Evalauted as True
+fset1 is fset2 is fset3         # Evalauted as False
 
 
 
 # Assignment
 
-a = b = c = 0
-b = 1
-c : int  = 2
-d, e, f = 3, 69, 98
-g = None
-h = 7
+a = b = c = 0                   # a, b, and c will all have the value (0)
+b = 1                           # b is assigned to value (1)
+c : int  = 2                    # c has the integer value of (2)
+d, e, f = 3, 69, 98             # d = 3, e = 69, f = 98
+g = None                        # g is assigned to value None
+h = 7                           # h i assigned to value 7
+
+
 
 # Type casting
 
-a = bool(a)
-b = bool(b)
-c = int(c)
-d = float(d)
-e = chr(e)
-f = str(f)
+a = bool(a)                     # a is typecasted to have a boolian value
+b = bool(b)                     # a is typecasted to have a boolian value
+c = int(c)                      # c is typecasted to have an integer value
+d = float(d)                    # d is typecasted to have a float value
+e = chr(e)                      # e is typecasted to have a character value
+f = str(f)                      # f is typecasted to have a string value
 
+# Look at the output for the following
 print(f"a : {type(a)} = {a}")
 print(f"b : {type(b)} = {b}")
 print(f"c : {type(c)} = {c}")
@@ -154,20 +137,19 @@ print(f"g : {type(g)} = {g}")
 print()
 
 
-# Typecasting in Lists and Tupils
-a = 1, 2, 3, 4, 5
-b = (6, 7, 8, 9, 0)
+# Typecasting in Lists and Tuple
+a = 1, 2, 3, 4, 5               # a is a tuple
+b = (6, 7, 8, 9, 0)             # b is also a tuple
 
-a = list(b)
-b = tuple(a)
-c =  set(a)
-d = frozenset(c)
+a = list(b)                     # elements of b are typecasted as list and assigned to a
+b = tuple(a)                    # elements of a are typecasted as tuple and assigned to b
+c =  set(a)                     # elements of a are typecasted as set and assigned to c
+d = frozenset(c)                # elements of c are typecasted as frozen-set and assigned to d
 
-print(type(a))
-print(type(b))
-print(type(c))
-print(type(d))
-print()
+type(a)                         # returns : <class 'list'>
+type(b)                         # returns : <class 'tuple'>
+type(c)                         # returns <class 'set'>
+type(d)                         # returns <class 'frozenset'>
 
 
 a = "7.8"
@@ -177,7 +159,6 @@ a = True * False                # a = 0
 a = False + 9                   # a = 9
 a = True + 6                    # a = 7
 a *= False                      # a = 0
-print()
 
 a = print(7)
 a                               # Prints 7

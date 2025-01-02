@@ -17,12 +17,12 @@ a <<= 2                         # a becomes 14, 4 left shifted by 2
 a >>= 2                         # a becomes 4, 14 right shifted by 2
 
 print("Using type hints :")
-a : str = 'Yo' # using type hints
+a : str = 'Yo'                  # using type hints
 b: float = 5.6
 print(f'a = {a}\nb = {b}')
 
 print("Assigning multiple values at once :")
-a = b = 5 #Assigning multiple values at once
+a = b = 5                       #Assigning multiple values at once
 print(f'a = {a} = b = {b}')
 a, b = 15, 4 
 print(f'a = {a}\nb = {b}')

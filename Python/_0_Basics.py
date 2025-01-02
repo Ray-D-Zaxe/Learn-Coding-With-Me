@@ -41,3 +41,8 @@ print(f'b = {b}')
 
 b = int(input("Enter an integer value : ")) # by using int(), we tell the system to treat the input as an integer
 print(f"b = {b}")               # if input is not an integer, it will result into an error
+
+
+
+a = b = 5                       # both a and b will have the value 5
+a, b = 5, "Hi"                  # a = 5, and, b = "Hi"

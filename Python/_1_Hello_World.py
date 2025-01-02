@@ -125,6 +125,11 @@ c = int(c)                      # c is typecasted to have an integer value
 d = float(d)                    # d is typecasted to have a float value
 e = chr(e)                      # e is typecasted to have a character value
 f = str(f)                      # f is typecasted to have a string value
+bytes(5)                        # returns a bytes object of length 5, b'\x00\x00\x00\x00\x00'
+bytearray(5)                    # returns a bytearray object of length 5, bytearray(b'\x00\x00\x00\x00\x00')
+memoryview(bytes(5))            # returns a memoryview object, <memory at <insert-address>>
+
+
 
 # Look at the output for the following
 print(f"a : {type(a)} = {a}")

@@ -49,6 +49,11 @@ a = 5*6, 6+8, 7-9, 8+2, 4/7, False + 1, True * 0, True + False, True * False
 
 
 
+# Tuples are iterable
+for i in a:
+    pass
+
+
 a+b                         # returns a new tuple withj the contents of a and b
 
 a and b                     # returns b

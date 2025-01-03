@@ -75,7 +75,7 @@ a = [5*6, 6+8, 7-9, 8+2, 4/7, False + 1, True * 0, True + False, True * False]
 
 # Lists are iterable
 for i in a:
-    pass
+    print(i)
 
 
 
@@ -103,8 +103,10 @@ newlist = [x for x in fruits if "a" in x]
                         # newlist = ["apple", "banana", "kiwi", "mango"]
 
 
+
 a = [x for x in range(10) if x % 2 == 0]
                         # a = [0, 2, 4, 6, 8]
+
 
 
 a = [x if x % 2 == 0 else "odd" for x in range(10)]

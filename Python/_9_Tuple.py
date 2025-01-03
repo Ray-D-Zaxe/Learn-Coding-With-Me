@@ -54,6 +54,12 @@ for i in a:
     pass
 
 
+
+c = c + a                   # same as, c = a + c, creates a new tuple with the contents of a and c
+c = c * 2                   # same as, c = 2 * c, creates a new tuple with the contents of c repeated twice
+
+
+
 a+b                         # returns a new tuple withj the contents of a and b
 
 a and b                     # returns b

@@ -38,9 +38,13 @@ a.sort()                # sorts the list a, uses timesort algorithm
 def myfunc(n):
   return abs(n - 50)    # returns the absolute value of the difference between n and 50
 
-thislist = [100, 50, 65, 82, 23]
-thislist.sort(key = myfunc)
-print(thislist)
+a = [100, 50, 65, 82, 23]
+a.sort(key = myfunc)
+print(a)
+
+a = ["banana", "Orange", "Kiwi", "cherry"]
+a.sort(key = str.lower)
+print(a)
 
 
 
@@ -63,12 +67,19 @@ a.clear()               # clears the list (a)
 del a                   # deletes the list (a)
 
 
+
 a = [5*6, 6+8, 7-9, 8+2, 4/7, False + 1, True * 0, True + False, True * False]
                         # a = [30, 14, -2, 10, 0.5714285714285714, 1, 0, 1, 0]
 
 
 
-a+b                     # Concatinates list a and b
+# Lists are iterable
+for i in a:
+    pass
+
+
+
+a + b                   # Concatinates list a and b
 a and b                 # returns a
 b and a                 # returns b
 a or b                  # returns b

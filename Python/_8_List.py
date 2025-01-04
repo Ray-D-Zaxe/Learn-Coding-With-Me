@@ -75,7 +75,7 @@ a = [5*6, 6+8, 7-9, 8+2, 4/7, False + 1, True * 0, True + False, True * False]
 
 # Lists are iterable
 for i in a:
-    print(i)
+    pass
 
 
 
@@ -111,3 +111,31 @@ a = [x for x in range(10) if x % 2 == 0]
 
 a = [x if x % 2 == 0 else "odd" for x in range(10)]
                         # a = [0, "odd", 2, "odd", 4, "odd", 6, "odd", 8, "odd"]
+
+
+
+a = [1, 2, 3, [3, 6], 4]
+b = [5, 6, 7, 3, 4, 7, [9, 4, 7], 6, 7, 4]
+c = list([1, 2, 3, 4, 5])  # returns a tuple
+c = list((3, 1, 2))        # returns a tuple, the function requires an interable as in input
+
+
+
+# Unpacking List
+x1, x2, x3 = c              # x1 = 1, x2 = 2, x3 = 3
+y1, y2, *y3 = a             # y1 = 1, y2 = 2, y3 = [3, 6, 4]
+z1, *z2, z3 = a             # z1 = 1, z2 = [3, 6], z3 = 4
+
+
+print(f"x1 = {x1}, x2 = {x2}, x3 = {x3}")
+print(f"y1 = {y1}, y2 = {y2}, y3 = {y3}")
+print(f"z1 = {z1}, z2 = {z2}, z3 = {z3}")
+
+
+
+names = ["John", "Jane"]
+foods = ["pizza", "sushi"]
+for name, food in names, foods:
+                # Access the values of names as name and food and when names is exhausted only then repeates
+                # the same for foods
+    print(name + " likes " + food)

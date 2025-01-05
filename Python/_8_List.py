@@ -100,7 +100,7 @@ a = [1, 2, 3, 4, 5]
 
 fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
 newlist = [x for x in fruits if "a" in x]
-                        # newlist = ["apple", "banana", "kiwi", "mango"]
+                        # newlist = ['apple', 'banana', 'mango']
 
 
 

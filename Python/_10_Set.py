@@ -1,4 +1,7 @@
 a = {1, 2, 4, 8, 9}
+
+b = a                   # a and b, both are bound to the same set, changes in one will affect the other as they are the same
+
 b = set([2, 4, 6, 8, 0])
 c = frozenset([0, 1, 2, 3, 4, 5])
 
@@ -65,7 +68,7 @@ a.discard(6)            # Doesn't raise an error for element not present
 a.discard(8)            # Discards 8 from the set
 a.discard(b)            # Doesn't discards the elements of b from the set a
 
-a.pop()                 # Removes and returns an arbitrary element from the set
+a.pop()                 # Removes and returns an arbitrary/random element from the set
 
 a.clear                 # Clears the set
 
@@ -132,6 +135,7 @@ a > b                   # False, Returns whether all items in other, specified s
 
 
 # Set comprehension
+
 a = {1, 2, 3, 4, 5}
 (print(i) for i in a)   # prints each element of tuple (a) in new line, one at a time
 

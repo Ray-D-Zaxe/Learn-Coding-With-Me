@@ -1,5 +1,5 @@
 a = [1, 2, 3]
-b = a                   # a and b, both are bound to the same list
+b = a                   # a and b, both are bound to the same list, changes in one will affect the other as they are the same
 
 c = [2] * 6
 print(f"c = {c}")
@@ -9,6 +9,8 @@ print(f"c = {c}")
 b.append(7)             # appends 7 at the end of both b and a
 
 b = a.copy()            # b has now a copy of a, i.e, b is different then a
+
+b = list(a)             # same as, b = a.copy()
 
 
 

@@ -1,5 +1,5 @@
 # Prime number generator
-
+'''
 import time
 
 limit = int(input("Enter the limit : "))
@@ -29,5 +29,9 @@ print(f"The no. of primes : {len(primes)}")
 print(f"Time took for ({limit}) = {end - start} :or: {e1 - s1}")
 
 
-
-
+'''
+a = {7, 8, 9}
+b = a
+a.add(1)
+print(a)
+print(b)

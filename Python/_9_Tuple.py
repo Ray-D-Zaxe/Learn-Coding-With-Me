@@ -68,3 +68,20 @@ a or b                      # returns a
 b and a                     # returns a
 
 3 in a                      # returns True
+
+
+
+# Tuple comprehension
+
+a = (1, 2, 3, 4, 5)
+(print(i) for i in a)   # prints each element of tuple (a) in new line, one at a time
+
+fruits = ("apple", "banana", "cherry", "kiwi", "mango")
+newTuple = tuple(x for x in fruits if "a" in x)
+                        # newTuple = ('apple', 'banana', 'mango')
+
+a = tuple(x for x in range(10) if x % 2 == 0)
+                        # a = (0, 2, 4, 6, 8)
+
+a = tuple(x if x % 2 == 0 else "odd" for x in range(10))
+                        # a = (0, 'odd', 2, 'odd', 4, 'odd', 6, 'odd', 8, 'odd')

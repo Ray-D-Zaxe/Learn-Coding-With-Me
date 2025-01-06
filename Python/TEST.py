@@ -31,7 +31,8 @@ print(f"Time took for ({limit}) = {end - start} :or: {e1 - s1}")
 
 '''
 a = {7, 8, 9}
-b = a
-a.add(1)
-print(a)
-print(b)
+b = "aloha"
+c = 15
+print(bool(a))
+print(bool(b))
+print(bool(c))

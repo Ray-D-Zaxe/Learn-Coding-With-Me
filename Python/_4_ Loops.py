@@ -73,7 +73,8 @@ print("while count < 5:")
 while count < 5:
     print(count)
     count += 1
-
+else:                           # else is optional
+    print("Loop Completed !!!")
 print(f"Outside loop, count = {count}")
 
 

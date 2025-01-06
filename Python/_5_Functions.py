@@ -86,6 +86,14 @@ def fact(i):                                    # Recursive Function
 sqr = lambda x : x * x                          # Lambda Function, takes x as argument, one-liner
 
 
+
+# if the function defination has (, /), i.e, def func_name(a, \), then in the function call the arguments are positional, i.e, func_name(1) is allowed but func_name(a = 1) is not allowed
+# if the function defination has (*, ), i.e, def func_name(*, a), then in the function call the arguments can only be keyword arguments, i.e, func_name(a = 1) is allowed but func_name(1) is not allowed
+# a combined approach of both is, def func_name(*, a, b), then in the function call the arguments can be positional or keyword arguments, i.e, func_name(a = 1, 2) is allowed but func_name(1, b = 2) is not allowed
+# a combined appprach may look like, def my_function(a, b, /, *, c, d)
+
+
+
 # -----------------------------------------------------------------------------------------------------------
 # Calling the Functions
 # -----------------------------------------------------------------------------------------------------------

@@ -21,6 +21,12 @@ a is b is c                     # Evalauted as True
 
 
 
+# Checking for datattype
+
+isinstance(a, int)              # Evalauted as True
+
+
+
 # Checking Lists
 
 lst1 = [6, 9]
@@ -181,3 +187,15 @@ id(b)                           # Address of b remained the same cuz no change i
 b += 4
 id(a)                           # Address of a, same as b
 id(b)                           # Address of b, same as a
+
+
+
+# Boolean values, rest are all true
+bool(False)                     # Returns False
+bool(None)                      # Returns False
+bool(0)                         # Returns False
+bool("")                        # Returns False
+bool(())                        # Returns False
+bool([])                        # Returns False
+bool({})                        # Returns False
+bool(set())                     # Returns False

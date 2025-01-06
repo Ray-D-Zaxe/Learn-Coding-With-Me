@@ -6,6 +6,9 @@ if (b > a): print("B is greater")
 # Short hand if else
 print(f'"A is greater" if a > b else "B is greater" : {"A is greater" if a > b else "B is greater"}')
 
+# Nested short hand if else
+print(f'"A is greater" if a > b else "B is greater" : {"A is greater" if a > b else "a = b" if a == b else "B is greater"}')
+
 if a > b:
     if a > c:
         print("A is greater")

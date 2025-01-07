@@ -1,8 +1,8 @@
 # Using the Module_Test.py created and saved file in the same directory
-import Module_Test
+import Module_Test as mt
 
-Module_Test.greet()
-Module_Test.id_print("Erroneous", 21)
+mt.greet()
+mt.id_print("Erroneous", 21)
 print()
 
 from math import pi, sqrt

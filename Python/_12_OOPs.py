@@ -70,9 +70,9 @@ object5.add()                           # prints 2 + 3 = 5, returns 5
 object5.__init__(0, 1)                  # updates the value of x within the instance object x = 0, y = 1
 object5.__str__()                       # returns (0, 1), since it was mentioned in the __str__ method and previously updated through __init__ method
 object5                                 # returns (0, 1), since it was mentioned in the __str__ method
-print(f":{object5}")
-del object5.x
-print(f":{object5}")
-del object5
+
+del object5.x                           # deletes the value of x within the instance object5
+
+del object5                             # deletes the instance object5
 
 methodClass                             # returns <class '__main__.methodClass'>

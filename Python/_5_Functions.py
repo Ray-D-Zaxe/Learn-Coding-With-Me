@@ -83,6 +83,16 @@ def fact(i):                                    # Recursive Function
 
 
 
+def myfunc1():
+    x = "Jane"
+    def myfunc2():
+        nonlocal x
+        x = "hello"                             # changes the value of outer myfunc1() x
+    myfunc2()
+    return x
+
+
+
 sqr = lambda x : x * x                          # Lambda Function, takes x as argument, one-liner
 
 
@@ -218,3 +228,7 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
 print(even_numbers)                             # Output: [2, 4, 6, 8, 10]
 print()
+
+
+
+myfunc1()                                       # returns the srting 'hello'

@@ -28,6 +28,9 @@ class parentClass:
     def __init__(self, x = 0, y = 0):
         self.x = x
         self.y = y
+    
+    def add(self):
+        print(f"{self.x} + {self.y} = {self.x + self.y}")
 
 class childClass1(parentClass):
     pass
@@ -50,6 +53,36 @@ class childClass4(parentClass):
     def add(self):                      # this function/method is defined by us inside the class
         print(f"{self.x} + {self.y} + {self.z} = {self.x + self.y + self.z}")
 
+# Iterator Classes
+
+class iteratorClass1:
+    def __iter__(self):
+        self.a = 1
+        return self
+    
+    def __next__(self):
+        x = self.a
+        self.a += 1
+        return x
+
+class iteratorClass2:
+    def __iter__(self):
+        self.z = 1
+        return self
+    
+    def __next__(self):
+        if self.z <= 10:
+            x = self.z
+            self.z += 1
+            return x
+        else:
+            raise StopIteration
+
+
+
+# -----------------------------------------------------------------------------------------------------------
+# Objects
+# -----------------------------------------------------------------------------------------------------------
 
 
 SimpleClass.x                           # returns 5, the value of x in SimpleClass
@@ -114,8 +147,22 @@ child2.x                                # returns -7, uses childClass2.x
 child3 = childClass3(-9, -8, -7)        # parentClass.__init__() inside childClass3 initilizes the values through the parent class
 child3.x                                # returns -9, uses parentClass.x
 child3.z                                # returns -7, uses childClass3.z
+child3.add()                            # using parentClass.add()
 
 child4 = childClass4(-3, -6, -9)
 child4.x                                # returns -3, uses parentClass.x
 child4.z                                # returns -9, uses childClass3.z
 child4.add()                            # using childClass4.add()
+
+
+
+iterableObj1 = iteratorClass1()
+objIter1 = iter(iterableObj1)
+next(objIter1)                          # returns 1
+next(objIter1)                          # returns 2
+next(objIter1)                          # returns 3
+
+iterableObj2 = iteratorClass2()
+objIter2 = iter(iterableObj2)
+for x in objIter2:
+    pass                                # x is iterated till it becomes 10

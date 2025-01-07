@@ -1,5 +1,7 @@
 # For loop using range
-# range takes (destination) or (start, destination), or (start, destination, steps)
+# Range takes (destination) or (start, destination), or (start, destination, steps)
+# For loop actually creates an iterator object and executes the next() method for each loop
+# For more on iterator objects, see OOPs.py
 
 print()
 print("for i in range(5):")

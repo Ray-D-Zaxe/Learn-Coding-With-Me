@@ -1,17 +1,17 @@
 class SimpleClass:
     x = 5                               # class variable/property/attribute
 
-class initClass:
-    def __init__(self, x, y):           # constructor, helps initilizing the values when object is created
-        self.x = x
+class initClass:                        # constructor, helps initilizing the values when object is created
+    def __init__(self, x1, y):          #  __init__() function is called automatically every time the class is being used to create a new object.
+        self.x = x1                     # use ObjectName.x to access the attribute/property, x1 scope is limited to assiging the value
         self.y = y
 
 class strClass:
-    def __init__(self, x, y):
+    def __init__(self, x, y):           # self is just a convention, it can be named anything but the first parameter
         self.x = x
         self.y = y
-    def __str__(self):
-        return f"({self.x}, {self.y})"
+    def __str__(mine):                  # we used mine in place of self, it can be named anything but the first parameter
+        return f"({mine.x}, {mine.y})"  # This function is used to return the string that the class returns
 
 class methodClass:
     def __init__(self, x = 2, y = 3):
@@ -20,9 +20,35 @@ class methodClass:
     def __str__(self):
         return f"({self.x}, {self.y})"
     
-    def add(self):
+    def add(self):                      # this function/method is defined by us inside the class
         print(f"{self.x} + {self.y} = {self.x + self.y}")
         return self.x + self.y
+
+class parentClass:
+    def __init__(self, x = 0, y = 0):
+        self.x = x
+        self.y = y
+
+class childClass1(parentClass):
+    pass
+
+class childClass2(parentClass):
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+class childClass3(parentClass):
+    def __init__(self, x, y, z):
+        parentClass.__init__(self, x, y)# used to call the parent class constructor and initilize its values
+        self.z = z
+
+class childClass4(parentClass):
+    def __init__(self, x, y, z):
+        super().__init__(x, y)          # super() is used to call the parent class constructor and initilize its values
+        self.z = z
+
+    def add(self):                      # this function/method is defined by us inside the class
+        print(f"{self.x} + {self.y} + {self.z} = {self.x + self.y + self.z}")
 
 
 
@@ -76,3 +102,20 @@ del object5.x                           # deletes the value of x within the inst
 del object5                             # deletes the instance object5
 
 methodClass                             # returns <class '__main__.methodClass'>
+
+
+
+child1 = childClass1(7, 8)              # child1 is an instance/object of childClass1, which is a child of class parentClass
+child1.x                                # returns 7, uses parentClass.x inherited by childClass
+
+child2 = childClass2(-7, -8)            # __init__() inside childClass2 overrides the parent class inheritence
+child2.x                                # returns -7, uses childClass2.x
+
+child3 = childClass3(-9, -8, -7)        # parentClass.__init__() inside childClass3 initilizes the values through the parent class
+child3.x                                # returns -9, uses parentClass.x
+child3.z                                # returns -7, uses childClass3.z
+
+child4 = childClass4(-3, -6, -9)
+child4.x                                # returns -3, uses parentClass.x
+child4.z                                # returns -9, uses childClass3.z
+child4.add()                            # using childClass4.add()

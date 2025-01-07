@@ -25,7 +25,7 @@ def  intro(name, age):                          # Multi-Argument
 
 
 
-def greet(name = "stranger"):                   # Default Argument
+def greet(name = "stranger"):                   # Default Argument, all default arugments must be at the end after all the non-default arguments
     print(f"Hello, {name}")
 
 

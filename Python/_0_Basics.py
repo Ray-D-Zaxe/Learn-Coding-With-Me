@@ -11,20 +11,24 @@ considered as triple
 quotation """
 
 
+
 a = 10                          # This is a variable (or var)
 a = 3                           # Its value can be changed
 a = 6.7                         # The same var can hold a different type of value (or val)
-a = "Hello World"               # This val is a string
-a = 'Hello World'               # This val is also a string
+a = 7.5                         # This is called a float or floating point val
+a = -8                          # And this ofcourse is our classic integer val
+a = 8j                          # This is a complex val
 a = True                        # This is a bool or boolian val
 a = False
-a = 7.5                         # This is called a float or floating point val
-a = -8                          # And this ofcourse o+is our classic integer val
+a = "Hello World"               # This val is a string
+a = 'Hello World'               # This val is also a string
+
 
 
 print('Hello World')            # This is the print function
 print("What's up ?")            # Its is used to print values
 # Use of   ^ (') in the above print was made possible by using ("") to encapsulate the string
+
 
 
 print(a)                        # We can directly print our variables

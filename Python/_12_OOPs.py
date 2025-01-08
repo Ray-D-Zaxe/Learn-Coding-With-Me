@@ -11,6 +11,7 @@ class strClass:
         self.x = x
         self.y = y
     def __str__(mine):                  # we used mine in place of self, it can be named anything but the first parameter
+        """Returns the string that the class returns, overriding the default string returned by the class"""
         return f"({mine.x}, {mine.y})"  # This function is used to return the string that the class returns
 
 class methodClass:
@@ -52,6 +53,23 @@ class childClass4(parentClass):
 
     def add(self):                      # this function/method is defined by us inside the class
         print(f"{self.x} + {self.y} + {self.z} = {self.x + self.y + self.z}")
+
+class polymorphicParentClass:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+class polymorphicChildClass1(polymorphicParentClass):
+    def operate(self):
+        print(f"{self.x} + {self.y} = {self.x + self.y}")
+
+class polymorphicChildClass2(polymorphicParentClass):
+    def operate(self):
+        print(f"{self.x} - {self.y} = {self.x - self.y}")
+
+class polymorphicChildClass3(polymorphicParentClass):
+    def operate(self):
+        print(f"{self.x} * {self.y} = {self.x * self.y}")
 
 # Iterator Classes
 
@@ -153,6 +171,16 @@ child4 = childClass4(-3, -6, -9)
 child4.x                                # returns -3, uses parentClass.x
 child4.z                                # returns -9, uses childClass3.z
 child4.add()                            # using childClass4.add()
+
+
+
+polyChild1 = polymorphicChildClass1(4, 7)
+polyChild2 = polymorphicChildClass2(4, 7)
+polyChild3 = polymorphicChildClass3(4, 7)
+
+polyChild1.operate()                    # prints 4 + 7 = 11
+polyChild2.operate()                    # prints 4 - 7 = -3
+polyChild3.operate()                    # prints 4 * 7 = 28
 
 
 

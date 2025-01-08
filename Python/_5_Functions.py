@@ -1,4 +1,5 @@
 # Defining the Functions
+# Remember, if there are 2 functions with the same name, regardless of the arguments, the second function defination will always override the first function defination
 
 global_var = global_var_1 = global_var_2 = global_var_3 = 0
 
@@ -15,8 +16,8 @@ def arg1(arg):                                  # 1 Argument
 
 
 
-def sum(a, b):                                  # Multi-Argument with return
-    return a + b
+def sum(a : int, b : int) -> int:               # Multi-Argument with return, other data types can still be used
+    return a + b                                # Will return accoring to the data type used as argument, -> operator is used only as/to hint for return datatype
 
 
 
@@ -28,6 +29,17 @@ def  intro(name, age):                          # Multi-Argument
 def greet(name = "stranger"):                   # Default Argument, all default arugments must be at the end after all the non-default arguments
     print(f"Hello, {name}")
 
+
+def polymorphic(a, b):                          # Polymorphism
+    if type(a) == int and type(b) == int:
+        print(f"int, a = {a}, b = {b}")
+        return a + b
+    elif type(a) == str and type(b) == str:
+        print(f"str, a = {a}, b = {b}")
+        return a + b
+    else:
+        print(f"other, a = {a}, b = {b}")
+    return a + b
 
 
 def sum_All(*args):                             # Variable Length Arguments using Tupils
@@ -139,6 +151,8 @@ print(f"sum(2, 3) : {sum(2, 3)}")               # WORKS!!!, i.e, calls the funct
 suum = sum(4, 5)
 #print(f"suum = sum(4, 5), suum() : {suum()}")  error cuz object suum() not callable
 print(f"suum = sum(4, 5), suum : {suum}")       # WORKS!!!, i.e, calls the function
+sum(9, 8)                                       # returns 17, as 9 and 8 are int
+sum('9', "8")                                   # returns '98', as '9' and "8" are str
 print()
 
 
@@ -146,6 +160,12 @@ print()
 print(f'intro(age = 21, name = "Erroneous") : {intro(age = 21, name = "Erroneous")}')
                                                 # WORKS!!!, i.e, calls the function
 print()
+
+
+
+polymorphic(1, 2)                               # WORKS!!!, i.e, calls the function, treates 1 and 2 as int, if statement
+polymorphic("a", "b")                           # WORKS!!!, i.e, calls the function, treates a and b as str, elif statement
+polymorphic(1.0, 2.0)                           # WORKS!!!, i.e, calls the function, treates 1.0 and 2.0 as float, else statement
 
 
 

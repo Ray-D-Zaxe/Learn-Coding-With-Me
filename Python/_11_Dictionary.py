@@ -29,6 +29,17 @@ d = {                                       # dictionaries within dictionary
 type(a)                                     # returns : <class 'dict'>
 
 
+print(f":a: {a}")
+iterA = iter(a)
+
+print(next(iterA))             # returns 1, the 1st element
+print(next(iterA))             # returns 2, the 2nd element
+
+for i in iterA:         # because next() is already used 2 times, starts with the 3rd element and
+   print(f":{i}")                 # accesses each element of list a, one at a time
+
+
+
 print(f":b = {b}")
 x = b.setdefault("year")                    # returns the respective value for the key ("year")
 x = b.setdefault("sec")                     # returns (None), since the key ("sec") doesn't exist, updates the dictionary with ("sec") as the key and (None) as the value

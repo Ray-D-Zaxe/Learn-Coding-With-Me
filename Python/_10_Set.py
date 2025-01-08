@@ -1,5 +1,6 @@
 a = {1, 2, 4, 8, 9}
 
+b = set()               # this is how to create an empty set, using, b = {}, would lead to the creation of dictionary instead
 b = a                   # a and b, both are bound to the same set, changes in one will affect the other as they are the same
 
 b = set([2, 4, 6, 8, 0])
@@ -11,6 +12,16 @@ d = [7, 4, 2, 4, True, 6, 9, 0, 1, 4, False, 6, 7, 2, 9, 0, 5, 6, 7, 3, 2, 1, 4,
 print(set(d))           # Creates a set of the first occurence of each element in list d and prints them
                         # {0, True, 2, 3, 4, 5, 6, 7, 8, 9}
 print()
+
+
+
+iterA = iter(a)
+
+next(iterA)             # returns year, the 1st element key
+next(iterA)             # returns month, the 2nd element key
+
+for i in iterA:         # because next() is already used 2 times, starts with the 3rd element and
+   pass                 # accesses each element of list a, one at a time
 
 
 

@@ -35,12 +35,11 @@ iterA = iter(a)
 next(iterA)                                 # returns year, the 1st element key
 next(iterA)                                 # returns month, the 2nd element key
 
-for i in iterA:         # because next() is already used 2 times, starts with the 3rd element and
-   print(f":{i}")                 # accesses each element of list a, one at a time
+for i in iterA:                             # because next() is already used 2 times, starts with the 3rd element and
+   pass                                     # accesses each element of list a, one at a time
 
 
 
-print(f":b = {b}")
 x = b.setdefault("year")                    # returns the respective value for the key ("year")
 x = b.setdefault("sec")                     # returns (None), since the key ("sec") doesn't exist, updates the dictionary with ("sec") as the key and (None) as the value
 x = b.setdefault("sec", 56)                 # returns (None), since "sec" already exists in dictionary (b), doesn't overrides the value

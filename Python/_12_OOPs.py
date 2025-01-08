@@ -10,9 +10,12 @@ class strClass:
     def __init__(self, x, y):           # self is just a convention, it can be named anything but the first parameter
         self.x = x
         self.y = y
+    
+    def __repr__(self):
+        return f"repr : (self.x = {self.x}, self.y = {self.y})"
     def __str__(mine):                  # we used mine in place of self, it can be named anything but the first parameter
         """Returns the string that the class returns, overriding the default string returned by the class"""
-        return f"({mine.x}, {mine.y})"  # This function is used to return the string that the class returns
+        return f"str : ({mine.x}, {mine.y})"  # This function is used to return the string that the class returns
 
 class methodClass:
     def __init__(self, x = 2, y = 3):
@@ -127,8 +130,12 @@ initClass                               # returns <class '__main__.initClass'>
 
 
 object3 = strClass(5, 6)                # object3 is an instance/object of strClass
-object3                                 # returns (5, 6), since it was mentioned in the __str__ method
+object3                                 # returns str : (5, 6), since it was mentioned in the __str__ method
+str(object3)                            # returns str : (5, 6), since it was mentioned in the __str__ method
+repr(object3)                           # returns repr : (self.x = 5, self.y = 6), since it was mentioned in the __str__ method
 
+repr(strClass)                          # returns <class '__main__.strClass'>
+str(strClass)                           # returns <class '__main__.strClass'>
 strClass                                # returns <class '__main__.strClass'>
 
 

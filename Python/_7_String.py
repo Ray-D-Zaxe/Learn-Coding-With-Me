@@ -7,6 +7,17 @@ print()
 
 
 
+strin = iter(str1)
+strin                       # returns <str_ascii_iterator object at <Memory Address>>
+
+next(strin)                 # returns H, the 1st character
+next(strin)                 # returns e, the 2nd character
+
+for i in strin:             # because next() is already used 2 times, starts with the 3rd element and
+    pass                    # access each character one at a time
+
+
+
 # Slice Operator
 
 str1[0]                     # H

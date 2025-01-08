@@ -36,3 +36,16 @@ c = 15
 print(bool(a))
 print(bool(b))
 print(bool(c))
+
+def polymorphic(a, b):
+    if type(a) == int and type(b) == int:
+        print(f"int, a = {a}, b = {b}")
+        return a + b
+    elif type(a) == str and type(b) == str:
+        print(f"str, a = {a}, b = {b}")
+        return a + b
+    else:
+        print(f"other, a = {a}, b = {b}")
+    return a + b
+
+

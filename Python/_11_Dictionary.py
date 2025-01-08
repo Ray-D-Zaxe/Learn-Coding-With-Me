@@ -29,11 +29,11 @@ d = {                                       # dictionaries within dictionary
 type(a)                                     # returns : <class 'dict'>
 
 
-print(f":a: {a}")
+
 iterA = iter(a)
 
-print(next(iterA))             # returns 1, the 1st element
-print(next(iterA))             # returns 2, the 2nd element
+next(iterA)                                 # returns year, the 1st element key
+next(iterA)                                 # returns month, the 2nd element key
 
 for i in iterA:         # because next() is already used 2 times, starts with the 3rd element and
    print(f":{i}")                 # accesses each element of list a, one at a time

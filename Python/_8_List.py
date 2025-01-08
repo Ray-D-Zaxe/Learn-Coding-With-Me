@@ -14,6 +14,17 @@ b = list(a)             # same as, b = a.copy()
 
 
 
+iterA = iter(a)
+
+next(iterA)             # returns 1, the 1st element
+next(iterA)             # returns 2, the 2nd element
+
+for i in iterA:         # because next() is already used 2 times, starts with the 3rd element and
+   pass                 # accesses each element of list a, one at a time
+
+
+
+
 b.append(9)             # appends 9 only at the end of b
 
 a.extend(b)             # appends the content of b at the end of a

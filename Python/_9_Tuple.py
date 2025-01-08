@@ -16,6 +16,18 @@ c = tuple((3, 1, 2))        # returns a tuple, the function requires an interabl
 
 
 
+# Iterable, iter and next methods (inbuilt)
+iterA = iter(a)
+
+next(iterA)             # returns 1, the 1st element
+next(iterA)             # returns 2, the 2nd element
+
+for i in iterA:         # because next() is already used 2 times, starts with the 3rd element and
+   pass                 # accesses each element of list a, one at a time
+
+
+
+
 # Unpacking tuple
 x1, x2, x3 = c              # x1 = 1, x2 = 2, x3 = 3
 y1, y2, *y3 = a             # y1 = 1, y2 = 2, y3 = [3, 6, 4]

@@ -21,7 +21,7 @@ def sum(a : int, b : int) -> int:               # Multi-Argument with return, ot
 
 
 
-def  intro(name, age):                          # Multi-Argument
+def intro(name, age):                           # Multi-Argument
     print(f"Name : {name}\nAge : {age}")
 
 
@@ -53,6 +53,17 @@ def sum_All(*args):                             # Variable Length Arguments usin
 def display_Info(**kwargs):                     # Variable Length Arguments using Dictonary
     for key, value in kwargs.items():
         print(f"{key} : {value}")
+
+
+
+def printo(*args, **kwargs):                    # Keyword Arguments, takes variable no. of arguments, returns a dictionary
+    print(args)
+    print(kwargs)
+
+
+
+def multiArgPronto(poly = "2x + 0y", *args, boli = True):                      # Variable Length Arguments using Tupils
+    print(f"poly : {poly}, args : {args}, boli : {boli}")                       # because keyword arguments are after positional arguments, the default value of poly will only be used if no arguments are passed into the function at all
 
 
 
@@ -200,6 +211,19 @@ print()
 display_Info(character_value = 'c', integer_value = 8, string_value = "yoo", float_value = 7.9)
                                                 # WORKS!!!, i.e, calls the display_Info function
 print("\n\n")
+
+
+
+printo( 0, 9, a = 9, b = "8", c=5.9)            # positional arguments are passed into the args tuple, keyword arguments are passed into the kwargs dictionary
+print()
+
+
+
+multiArgPronto()
+multiArgPronto(4j, 2, 4, "5 + 9")
+multiArgPronto("2x + 4y", 2, 4, "5 + 9")        # WORKS!!!, i.e, calls the function
+multiArgPronto("2x + 4y", 2, 4, "5 + 9", boli = False)  # WORKS!!!, i.e, calls the function
+print()
 
 
 

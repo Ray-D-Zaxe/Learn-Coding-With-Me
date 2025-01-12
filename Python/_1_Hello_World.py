@@ -199,3 +199,7 @@ bool(())                        # Returns False
 bool([])                        # Returns False
 bool({})                        # Returns False
 bool(set())                     # Returns False
+
+print("Number :", input("Input 1 : "), input("Input 2 : "))
+                                # First evaluates input 1, then input 2, then executes the print() function
+a = 7

@@ -36,7 +36,6 @@ print("a =", a)                 # we could do this but this can get complicated 
 
 print(f"a = {a}")               # this is a formatted print, the values inside {} get evaluated
 #     ^ this (f) is used to tell the system that its a formatted print
-print(f"a + 10 = {a + 10}")
 
 
 

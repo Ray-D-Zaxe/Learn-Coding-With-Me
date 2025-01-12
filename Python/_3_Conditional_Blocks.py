@@ -26,3 +26,16 @@ elif b < a and b < c:
     print("B is smaller")
 else:
     print("A is smaller")
+
+
+
+a = int(input("Enter an integer : "))
+match a:                                    # match case, basically switch case
+    case 1:
+        print("Input is 1")
+    case 2:
+        print("Input is 2")
+    case 3:
+        print("Input is 3")
+    case _:                                 # default case
+        print("Input is not 1, 2, or 3")

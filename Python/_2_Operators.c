@@ -7,6 +7,7 @@ void main(){
 
 
 
+    // Arithmetic Operators
     a + b;                  // returns 16
     a - b;                  // returns -6
     a * b;                  // returns 55
@@ -16,6 +17,7 @@ void main(){
 
 
 
+    // Unary Operators
     a;                      // returns 5
     a++;                    // returns 5
     a;                      // returns 6
@@ -29,6 +31,7 @@ void main(){
 
 
 
+    // Relational Operators
     //#include<stdbool.h>
     a == b;                 // returns 0
     a != b;                 // returns 1
@@ -36,4 +39,11 @@ void main(){
     a > b;                  // returns 0
     a <= b;                 // returns 1
     a >= b;                 // returns 0
+
+
+
+    // Logical Operators
+    (a == b) || (a <= b);    // returns 1
+    (a == b) && (a <= b);   // returns 0
+    !(a == b);              // returns 1
 }

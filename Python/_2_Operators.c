@@ -43,7 +43,17 @@ void main(){
 
 
     // Logical Operators
-    (a == b) || (a <= b);    // returns 1
+    (a == b) || (a <= b);   // returns 1
     (a == b) && (a <= b);   // returns 0
     !(a == b);              // returns 1
+
+
+
+    // Bitwise Operators
+    a & b;                  // returns 1
+    a | b;                  // returns 15
+    a ^ b;                  // returns 14
+    ~a;                     // returns -6
+    a << 2;                 // returns 20
+    a >> 1;                 // returns 2
 }

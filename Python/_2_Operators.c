@@ -56,4 +56,19 @@ void main(){
     ~a;                     // returns -6
     a << 2;                 // returns 20
     a >> 1;                 // returns 2
+
+
+
+    // Assignment Operators
+    a = 5;                  // returns 5
+    a += b;                 // returns 16
+    a -= b;                 // returns 5
+    a *= b;                 // returns 55
+    a /= b;                 // returns 5
+    a %= b;                 // returns 5
+    a &= b;                 // returns 1
+    a |= 7;                 // returns 7
+    a ^= b;                 // returns 12
+    a <<= 2;                // returns 48
+    a >>= 1;                // returns 24
 }

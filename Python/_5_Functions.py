@@ -134,9 +134,12 @@ sqr = lambda x : x * x                          # Lambda Function, takes x as ar
 func                                            # doesn't do anything, cuz it calls the object not the function
 basic_f = func                                  # passes func as an object to variable basic_f
 basic_f                                         # doesn't do anything, cuz it calls the object not the function
+basic_f2 = func()
+basic_f2
 print(f"func : {func}")                         # WORKS!!!, i.e, prints the location of function func
 print(f"basic_f : {basic_f}")                   # WORKS!!!, i.e, prints the location of function func
 print(f"basic_f() : {basic_f()}")               # WORKS!!!, i.e, calls the function
+print(f"basic_f2 : {basic_f2}")
 print(f"func() : {func()}")                     # WORKS!!!, i.e, calls the function
 print()
 

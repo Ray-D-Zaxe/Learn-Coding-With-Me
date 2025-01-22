@@ -36,6 +36,9 @@ int * ret_arr_arg_func_4(int *arr, int size);       // Returning an array throug
 
 arrayStruct ret_arr_struct_arg_func_5(int * a);     // Returning an arrya through structure, i.e., returning a structure
 
+int w = 10, x = 20;                                 // Global variables
+void scope_check(int w, int y);
+
 // ----------------------------------------------------------------------------------------------------------------------------------------------
 // Function call in main function
 // ----------------------------------------------------------------------------------------------------------------------------------------------
@@ -80,12 +83,21 @@ void main(){
 
 
     int a = 7, b = 9;
-    printf("Outside funtion,\na = %d, b = %d\n", a, b);
+    printf("Outside funtion :\na = %d, b = %d\n", a, b);
     pass_by_value(a, b);
-    printf("Outside funtion,\na = %d, b = %d\n", a, b);
+    printf("Outside funtion :\na = %d, b = %d\n", a, b);
     pass_by_reference(&a, &b);
-    printf("Outside funtion,\na = %d, b = %d\n", a, b);
+    printf("Outside funtion :\na = %d, b = %d\n", a, b);
     printf("\n");
+
+
+
+    int y = 30, z = 40;
+    printf("Outside funtion :\nw = %d,\tx = %d,\ty = %d,\tz = %d\n", w, x, y, z);
+    ++w, ++x, y++, ++z;
+    printf("Outside funtion :\nw = %d,\tx = %d,\ty = %d,\tz = %d\n", w, x, y, z);
+    scope_check(w, y);                              // only the value of (x) changes since its a global variable and was not passed by value like the other global variable (w) or even the local variable (y)
+    printf("Outside funtion :\nw = %d,\tx = %d,\ty = %d,\tz = %d\n", w, x, y, z);
 }
 
 // ----------------------------------------------------------------------------------------------------------------------------------------------
@@ -161,4 +173,10 @@ void pass_by_reference(int *a, int *b){
     *b = *a - *b;
     *a -= *b;
     printf("(Inside Funtion):\na = %d, b = %d\n", *a, *b);
+}
+
+void scope_check(int w, int y){
+    printf("scope_check(int w, int y) :");
+    ++w, ++x, ++y;                                  // can't access (z) as it is a local variable
+    printf("(Inside Funtion):\nw = %d, x = %d, y = %d\n", w, x, y);
 }

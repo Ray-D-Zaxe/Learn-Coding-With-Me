@@ -47,8 +47,31 @@ void main()
 
     int a = i = j = k = 9;                              // same value can be assigned in this fashion to multiple variables as lon as they are all initilized
     
-    float f1 = 35e3;                                    // e or E is the exponential operator used to denote a number in scientific notation
-    double d1 = 12E4;
+    float f1 = 35e3, f2 = 22.0/7;                       // f2 is implicitly typecasted to float
+    double d1 = 12E4;                                   // e or E is the exponential operator used to denote a number in scientific notation
 
-    printf("f1 = %f, d1 = %lf\n", f1, d1); 
+    printf("f1 = %f, d1 = %lf\n", f1, d1);
+    printf("f2 = %f\n", f2);                            // by default, shows upto 6 decimal places
+    printf("f2 = %.1f\n", f2);                          // shows upto 1 decimal place, upto the number mentioned after %. and before f
+    printf("f2 = %.2f\n", f2);                          // shows upto 2 decimal places, i.e, %.nf, where n is the number of decimal places
+    printf("f2 = %.3f\n", f2);                          // shows upto 3 decimal places
+    printf("f2 = %.0f\n", f2);                          // shows upto 0 decimal places
+
+    f2 = (float) a;                                     // explicit typecasted to float
+
+
+
+    const int const_int = 7;                            // constant integer, can't be changed
+
+
+
+    // Booleans
+
+    printf("%d\n", k == m);                             // returns 0, k is not equal to m
+    printf("%d\n", k != m);                             // returns 1, k is not equal to m
+
+    #include<stdbool.h>
+    bool b1 = true;
+    printf("%d\n", b1);                                 // returns 1
+    printf("%d\n", false);                              // returns 0
 }

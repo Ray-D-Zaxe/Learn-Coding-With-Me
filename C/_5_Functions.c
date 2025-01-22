@@ -39,6 +39,8 @@ arrayStruct ret_arr_struct_arg_func_5(int * a);     // Returning an arrya throug
 int w = 10, x = 20;                                 // Global variables
 void scope_check(int w, int y);
 
+int factorial_recursion(int f);                     // Recursion
+
 // ----------------------------------------------------------------------------------------------------------------------------------------------
 // Function call in main function
 // ----------------------------------------------------------------------------------------------------------------------------------------------
@@ -98,6 +100,11 @@ void main(){
     printf("Outside funtion :\nw = %d,\tx = %d,\ty = %d,\tz = %d\n", w, x, y, z);
     scope_check(w, y);                              // only the value of (x) changes since its a global variable and was not passed by value like the other global variable (w) or even the local variable (y)
     printf("Outside funtion :\nw = %d,\tx = %d,\ty = %d,\tz = %d\n", w, x, y, z);
+
+
+
+    int f = factorial_recursion(5);
+    printf("f = factorial_recursion(5) : %d\n", f);
 }
 
 // ----------------------------------------------------------------------------------------------------------------------------------------------
@@ -179,4 +186,13 @@ void scope_check(int w, int y){
     printf("scope_check(int w, int y) :");
     ++w, ++x, ++y;                                  // can't access (z) as it is a local variable
     printf("(Inside Funtion):\nw = %d, x = %d, y = %d\n", w, x, y);
+}
+
+
+
+int factorial_recursion(int f){
+    if(f <= 1)
+        return 1;
+    else
+        return f * factorial_recursion(f - 1);
 }

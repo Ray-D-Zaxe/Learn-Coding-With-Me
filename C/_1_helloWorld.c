@@ -17,6 +17,11 @@ void main()
     
     
     
+    char ch[100];
+    printf("Hi, %s\n", fgets(ch, 100, stdin), printf("Enter your name: "));
+
+
+    
     printf("Enter a number: ");
     scanf("%d", &i);
     

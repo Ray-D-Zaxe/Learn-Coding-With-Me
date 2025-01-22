@@ -42,5 +42,10 @@ print(f"a = {a}")               # this is a formatted print, the values inside {
 b = input("Enter a value : ")   # used to take user input
 print(f'b = {b}')
 
-b = int(input("Enter an integer value : ")) # by using int(), we tell the system to treat the input as an integer
+b = int(input("Enter an integer value : "))     # by using int(), we tell the system to treat the input as an integer
 print(f"b = {b}")               # if input is not an integer, it will result into an error
+
+
+
+print("Hi", input("Hi, whats you name? "))      # Input function is executed first and then the print function which uses the input function's return value as one of its arguments
+print(f"Hi, {input('Hi, whats you name? ')}")   # Same as the previous one, with a different syntax (formatted string)

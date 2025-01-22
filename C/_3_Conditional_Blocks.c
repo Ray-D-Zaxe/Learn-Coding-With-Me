@@ -1,11 +1,13 @@
 #include<stdio.h>
 
 int main(){
-    int a = 5, b = 11, c = 15;
+    int a = 5, b = 11, c = 15, d;
 
 
 
     (a < b) ? printf("a < b\n") : printf("a > b\n") ;
+
+    d = (a < b) ? a : b;
 
 
 

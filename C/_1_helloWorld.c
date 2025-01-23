@@ -80,6 +80,14 @@ int main()
     printf("%d\n", b1);                                 // returns 1
     printf("%d\n", false);                              // returns 0
 
+
+
+    m = 0x4a7B, i = 1747;
+    printf("m (int using %%d) = %d\n", m);
+    printf("i (int using %%d) = %d\n", i);
+    printf("m (int using %%x) = %x\n", m);
+    printf("i (int using %%x) = %x\n", i);
+
     
     
     return 0;

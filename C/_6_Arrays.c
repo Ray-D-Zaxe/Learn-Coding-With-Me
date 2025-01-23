@@ -15,15 +15,8 @@ int main(){
 
     printf("arr1[0] = %d\n", arr1[0]);
     printf("arr1 = %d\n", arr1);
-    printf("arr1 + 1 = %d\n", arr1 + 1);
-    printf("*arr1 = %d\n", *arr1);
-    printf("*(arr1 + 1) = %d\n", *(arr1 + 1));
-    printf("&arr1[0] = %d\n", &arr1[0]);
-    printf("&arr1[0] + 1 = %d\n", &arr1[0] + 1);
-    printf("*&arr1[0] = %d\n", *&arr1[0]);
-    printf("*(&arr1[0] + 1) = %d\n", *(&arr1[0] + 1));
-    printf("&arr1 = %d\n", &arr1);
-    printf("*&arr1 = %d\n\n", *&arr1);
+    printf("arr1 + 1 = %d\n\n", arr1 + 1);
+
     for(i = 0; i < 5; i++)
         arr3[i] = arr1[i] + arr2[i];
     for(i = 0; i < 5; i++)
@@ -50,14 +43,6 @@ int main(){
     printf("mul3[0][0] = %d\n", mul3[0][0]);
     printf("mul3[0] = %d\n", mul3[0]);
     printf("mul3 = %d\n", mul3);
-    printf("*mul3[0] = %d\n", *mul3[0]);
-    printf("*mul3 = %d\n", *mul3);
-    printf("**mul3 = %d\n", **mul3);
-    printf("&mul3[0][0] = %d\n", &mul3[0][0]);
-    printf("&mul3[0] = %d\n", &mul3[0]);
-    printf("&mul3 = %d\n", &mul3);
-    printf("mul3[0][0] = %d\n", mul3[0][0]);
-    printf("mul3[0][0] = %d\n", mul3[0][0]);
 
     for(i = 0; i < 3; i++){
         for(j = 0; j < 3; j++)

@@ -45,7 +45,19 @@ int factorial_recursion(int f);                     // Recursion
 // Function call in main function
 // ----------------------------------------------------------------------------------------------------------------------------------------------
 
-int main(){
+int main(int argc, char *argv[]){
+
+    // Clear the terminal using (clear) command
+    // Compile the program using (gcc _5_Functions.c -o _5_Functions.exe) and then run it using (./_5_Functions.exe)
+    // Now run it again this time, write random string after (./_5_Functions.exe) command, eg., (./_5_Functions.exe Yo what's up dwag?)
+    printf("main(int argc, char *argv[]) :::\n");
+    printf("argc = %d\n", argc);
+    for(int i = 0; i < argc; i++)
+        printf("argv[%d] = %s\n", i, argv[i]);
+    printf("\n");
+
+
+
     bsc_prt_1();
     bsc_prt_2();
     printf("\n");

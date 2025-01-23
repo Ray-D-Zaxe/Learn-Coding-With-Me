@@ -41,12 +41,17 @@ void scope_check(int w, int y);
 
 int factorial_recursion(int f);                     // Recursion
 
+implicit_ret_func();                                // Implicit return, should always be avoided, int is always assumed as return type in this case
+
+void callback_func(void (*)());                   // void (*)() acts as function pointer
+
 // ----------------------------------------------------------------------------------------------------------------------------------------------
 // Function call in main function
 // ----------------------------------------------------------------------------------------------------------------------------------------------
 
 int main(int argc, char *argv[]){
 
+    // argc and argv are arguments and can be named anything
     // Clear the terminal using (clear) command
     // Compile the program using (gcc _5_Functions.c -o _5_Functions.exe) and then run it using (./_5_Functions.exe)
     // Now run it again this time, write random string after (./_5_Functions.exe) command, eg., (./_5_Functions.exe Yo what's up dwag?)
@@ -112,11 +117,39 @@ int main(int argc, char *argv[]){
     printf("Outside funtion :\nw = %d,\tx = %d,\ty = %d,\tz = %d\n", w, x, y, z);
     scope_check(w, y);                              // only the value of (x) changes since its a global variable and was not passed by value like the other global variable (w) or even the local variable (y)
     printf("Outside funtion :\nw = %d,\tx = %d,\ty = %d,\tz = %d\n", w, x, y, z);
+    printf("\n");
 
 
 
     int f = factorial_recursion(5);
     printf("f = factorial_recursion(5) : %d\n", f);
+    printf("\n");
+
+
+
+    int r = implicit_ret_func();
+    printf("r = implicit_ret_func() : %d\n", r);
+    printf("\n");
+
+
+
+    printf("callback_func(bsc_prt_1) : ");
+    callback_func(bsc_prt_1);
+    printf("callback_func(&bsc_prt_1) : ");
+    callback_func(&bsc_prt_1);
+    void *ptr1 = bsc_prt_1;
+    printf("callback_func(ptr1) : ");
+    callback_func(ptr1);
+    void *ptr2 = &bsc_prt_1;
+    printf("callback_func(ptr2) : ");
+    callback_func(ptr2);
+    void (*ptr3)() = bsc_prt_1;
+    printf("callback_func(ptr3) : ");
+    callback_func(ptr3);
+    void (*ptr4)() = &bsc_prt_1;
+    printf("callback_func(ptr4) : ");
+    callback_func(ptr4);
+    printf("\n");
 
 
 
@@ -204,11 +237,19 @@ void scope_check(int w, int y){
     printf("(Inside Funtion):\nw = %d, x = %d, y = %d\n", w, x, y);
 }
 
-
-
 int factorial_recursion(int f){
     if(f <= 1)
         return 1;
     else
         return f * factorial_recursion(f - 1);
+}
+
+implicit_ret_func(){
+    printf("implicit_ret_func() :");
+    return 7;
+}
+
+void callback_func(void (*func)()){
+    printf("callback_func(void (*func)()) : ");
+    func();
 }

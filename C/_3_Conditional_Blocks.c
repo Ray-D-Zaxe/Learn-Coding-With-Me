@@ -46,4 +46,8 @@ int main(){
         break;
     }
     printf("Switch-Case statement over.\n");
+
+
+
+    return 0;
 }

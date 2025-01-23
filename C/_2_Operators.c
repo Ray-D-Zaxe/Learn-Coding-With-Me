@@ -1,7 +1,7 @@
 // Operators
 #include<stdio.h>
 
-void main(){
+int main(){
     int a, b;
     a = 5; b = 11;
 
@@ -77,4 +77,8 @@ void main(){
     // Ternary Operator
     // (condition) ? returns (code if condition true) : returns (code if condition false);
     (a > b) ? a : b;        // returns 24, a
+
+
+
+    return 0;
 }

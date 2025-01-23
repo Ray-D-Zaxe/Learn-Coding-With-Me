@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-void main(){
+int main(){
     int i = 0, j = 0, k = 0;
 
     // While Loop, loops till the condition returns false (0)
@@ -72,4 +72,8 @@ void main(){
         printf("\t");
     }
     printf("\n\tfinal value of (i) = %d\n\tloop run count = %d\n\n", i, j);
+
+
+
+    return 0;
 }

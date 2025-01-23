@@ -9,7 +9,7 @@ before c99, released in 1999, only this was used to comment*/
 
 
 
-void main()
+int main()
 {
     int i, j = 10, k, m, n = 8;
 
@@ -79,4 +79,8 @@ void main()
     bool b1 = true;
     printf("%d\n", b1);                                 // returns 1
     printf("%d\n", false);                              // returns 0
+
+    
+    
+    return 0;
 }

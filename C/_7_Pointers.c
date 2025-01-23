@@ -8,23 +8,27 @@ int main(){
 
 
 
-    printf("arr[0] = %d\n", arr[0]);
+    printf("arr[0] = %d\n\n", arr[0]);
+
     printf("arr = %d\n", arr);
     printf("arr + 1 = %d\n", arr + 1);
     printf("*arr = %d\n", *arr);
-    printf("*(arr + 1) = %d\n", *(arr + 1));
+    printf("*(arr + 1) = %d\n\n", *(arr + 1));
+    
     printf("&arr[0] = %d\n", &arr[0]);
     printf("&arr[0] + 1 = %d\n", &arr[0] + 1);
     printf("*&arr[0] = %d\n", *&arr[0]);
-    printf("*(&arr[0] + 1) = %d\n", *(&arr[0] + 1));
+    printf("*(&arr[0] + 1) = %d\n\n", *(&arr[0] + 1));
+
     printf("&arr = %d\n", &arr);
+    printf("&arr + 1 = %d\n", (&arr) + 1);
+    printf("*&arr + 1 = %d\n", *&arr + 1);
     printf("*&arr = %d\n", *&arr);
     printf("**&arr = %d\n", **&arr);
-    printf("&arr + 1 = %d\n", &arr + 1);
-    printf("*&arr + 1 = %d\n", *&arr + 1);
-    printf("**&arr + 1 = %d\n", **&arr + 1);
     printf("*(*&arr + 1) = %d\n\n", *(*&arr + 1));
 
+
+/*
     printf("mul[0][0] = %d\n", mul[0][0]);
     printf("mul[0] = %d\n", mul[0]);
     printf("mul = %d\n", mul);
@@ -40,4 +44,6 @@ int main(){
     printf("**&mul[0] = %d\n", **&mul[0]);
     printf("**&mul = %d\n", **&mul);
     printf("***&mul = %d\n\n", ***&mul);
+*/
+    return 0;
 }

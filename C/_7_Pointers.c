@@ -21,9 +21,12 @@ int main(){
     printf("*(&arr[0] + 1) = %d\n\n", *(&arr[0] + 1));
 
     printf("&arr = %d\n", &arr);
-    printf("&arr + 1 = %d\n", (&arr) + 1);
-    printf("*&arr + 1 = %d\n", *&arr + 1);
+    printf("(&arr + 1) = %d\n", (&arr + 1));
     printf("*&arr = %d\n", *&arr);
+    printf("*(&arr + 1) = %d\n", *(*(&arr + 1) - 1));
+    printf("*(&arr + 1) = %d\n", *(&arr + 1));
+    printf("*&arr + 1 = %d\n", *&arr + 1);
+    printf("**(&arr + 1) = %d\n", **(&arr + 1));
     printf("**&arr = %d\n", **&arr);
     printf("*(*&arr + 1) = %d\n\n", *(*&arr + 1));
 

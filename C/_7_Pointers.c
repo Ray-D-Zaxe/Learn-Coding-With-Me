@@ -48,17 +48,17 @@ int main(){
 
 
 
-    printf("arr[0] = %d\n\n", arr[0]);
+    printf("arr[0] = %d\n\n", arr[0]);                          // returns 2, the value of the 1st element
 
-    printf("arr = %d\n", arr);                                  // returns the base addres of (arr), i.e, the address of the first element, same as (&arr[0])
-    printf("*arr = %d\n", *arr);                                // returns the value of the first element, i.e., *(&arr[0])
-    printf("arr + 1 = %d\n", arr + 1);                          // returns the address of the next element, i.e., (&arr[0] + 1) or (arr + sizeof(int))
-    printf("*(arr + 1) = %d\n\n", *(arr + 1));                  // returns the value of the next element, i.e., *(&arr[0] + 1) or *(arr + sizeof(int))
+    printf("arr = %d\n", arr);                                  // returns the base addres of (arr)
+    printf("*arr = %d\n", *arr);                                // returns 2, the value of the first element
+    printf("arr + 1 = %d\n", arr + 1);                          // returns the address of the next element
+    printf("*(arr + 1) = %d\n\n", *(arr + 1));                  // returns 4, the value of the next element
     /*
-    arr ....... = &arr[0] ......... = *&arr
-    *arr        = *(&arr[0])        = **&arr
-    arr + 1 ... = &arr[0] + 1 ..... = *&arr + 1
-    *(arr + 1)  = *(&arr[0] + 1)    = *(*&arr + 1)
+    arr ....... = *&arr ....... = &arr[0]
+    *arr        = **&arr        = *(&arr[0]) ...... = 2
+    arr + 1 ... = *&arr + 1 ... = &arr[0] + 1
+    *(arr + 1)  = *(*&arr + 1)  = *(&arr[0] + 1) .. = 4
     */
     printf("&arr = %d\n", &arr);
 

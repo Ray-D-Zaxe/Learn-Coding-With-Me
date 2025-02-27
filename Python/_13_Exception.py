@@ -10,6 +10,17 @@ except NameError:
 except:
     print("Something else went wrong") 
 
+
+
+
+x = "hello"
+
+if not type(x) is int:
+    raise TypeError("Only integers are allowed")
+
+
+
+
 try:
     print("Hello")
 except:

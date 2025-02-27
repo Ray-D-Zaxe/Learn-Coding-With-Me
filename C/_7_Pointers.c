@@ -56,11 +56,11 @@ int main(){
     printf("*(arr + 1) = %d\n\n", *(arr + 1));                  // returns 4, the value of the next element
     /*
     arr         = *&arr         = &arr[0]
-    *arr ...... = **&arr ...... = *(&arr[0]) ...... = 2
+    *arr ...... = **&arr ...... = *&arr[0] ......   = arr[0] .. = 2
     arr + 1     = *&arr + 1     = &arr[0] + 1
-    *(arr + 1)  = *(*&arr + 1)  = *(&arr[0] + 1) .. = 4
+    *(arr + 1)  = *(*&arr + 1)  = *(&arr[0] + 1) .. = arr[1] .. = 4
     */
-    printf("&arr = %d\n", &arr);                                // returns the address of arr as an integer array of 5 elements
+    printf("&arr = %d\n", &arr);                                // returns the address of arr as an int array of 5 elements
     printf("&arr + 1 = %d\n", &arr + 1);                        // returns the address after the address of last element of (arr) (i.e., arr[4]), treates this address like an int array of 5 elementss, increments the address by the size of int array of 5 elements
     printf("*(&arr + 1) - 1 = %d\n", *(&arr + 1) - 1);          // returns the address of the last element of the array, decrements the address (obtained by incrementing the original address by the size of an int array of size 5) by the size of int
     printf("*(*(&arr + 1) - 1) = %d\n\n", *(*(&arr + 1) - 1));  // returns the value of the last element
@@ -75,41 +75,30 @@ int main(){
     printf("*(mul[0] + 1) = %d\n\n", *(mul[0] + 1));            // returns 4, the value of the next element
     /*
     *mul        = **&mul        = *&mul[0]          = mul[0]        = &mul[0][0]
-    **mul ..... = ***&mul ..... = **&mul[0] ....... = *mul[0] ..... = *&mul[0][0] ..... = 2
+    **mul ..... = ***&mul ..... = **&mul[0] ....... = *mul[0] ..... = *&mul[0][0] ..... = mul[0][0] ... = 2
     *mul + 1    = **&mul + 1    = *&mul[0] + 1      = mul[0] + 1    = &mul[0][0] + 1
-    *(*mul + 1) = *(**&mul + 1) = *(*&mul[0] + 1) . = *(mul[0] + 1) = *(&mul[0][0] + 1) = 4
+    *(*mul + 1) = *(**&mul + 1) = *(*&mul[0] + 1) . = *(mul[0] + 1) = *(&mul[0][0] + 1) = mul[0][1] ... = 4
     */
-    printf("mul = %d\n", mul);
-    printf("mul + 1 = %d\n", mul + 1);
-    printf("*(mul + 1) = %d\n", *(mul + 1));
-    printf("**(mul + 1) = %d\n", **(mul + 1));
-    printf("*mul + 1 = %d\n", *mul + 1);
-    printf("*(*mul + 1) = %d\n\n", *(*mul + 1));
-
-    printf("&mul[0][0] = %d\n", &mul[0][0]);
-    printf("*&mul[0][0] = %d\n", *&mul[0][0]);
-    printf("&mul[0][0] + 1 = %d\n", &mul[0][0] + 1);
-    printf("*(&mul[0][0] + 1) = %d\n\n", *(&mul[0][0] + 1));
-
-    printf("&mul[0] = %d\n", &mul[0]);
-    printf("*&mul[0] = %d\n", *&mul[0]);
-    printf("**&mul[0] = %d\n", **&mul[0]);
-    printf("&mul[0] + 1 = %d\n", &mul[0] + 1);
+    printf("mul = %d\n", mul);                                  // returns the base address of (mul[0]), accounts for only the outer array
+    printf("mul + 1 = %d\n", mul + 1);                          // returns the address of mul[1], increments the address by the size of int array of size 3
+    printf("*(mul + 1) = %d\n", *(mul + 1));                    // returns the address of mul[1][0]
+    printf("**(mul + 1) = %d\n\n", **(mul + 1));                // returns 8, the value of the mul[1][0]
+    /*
+    mul         = *&mul         = &mul[0]
+    *mul ...... = **&mul ...... = *&mul[0] ........ = 2
+    mul + 1     = *&mul + 1     = &mul[0] + 1
+    *(mul + 1)  = *(*&mul + 1)  = *(&mul[0] + 1)
+    **(mul + 1) = **(*&mul + 1) = **(&mul[0] + 1) . = 8
+    */
     printf("*(&mul[0] + 1) = %d\n", *(&mul[0] + 1));
-    printf("**(&mul[0] + 1) = %d\n", **(&mul[0] + 1));
-    printf("*&mul[0] + 1 = %d\n", *&mul[0] + 1);
     printf("*(*&mul[0] + 1) = %d\n\n", *(*&mul[0] + 1));
     
     printf("&mul = %d\n", &mul);
-    printf("*&mul = %d\n", *&mul);
-    printf("***&mul = %d\n", ***&mul);
     printf("&mul + 1 = %d\n", &mul + 1);
     printf("*(&mul + 1) = %d\n", *(&mul + 1));
     printf("**(&mul + 1) = %d\n", **(&mul + 1));
-    printf("***(&mul + 1) = %d\n", ***(&mul + 1));
-    printf("*&mul + 1 = %d\n", *&mul + 1);
-    printf("*(*&mul + 1) = %d\n", *(*&mul + 1));
-    printf("**(*&mul + 1) = %d\n", **(*&mul + 1));
+    printf("***(&mul + 1) = %d\n\n", ***(&mul + 1));
+    printf("*(**(&mul + 1) - 1) = %d\n\n", *(**(&mul + 1) - 1));
 
     return 0;
 }

@@ -2,7 +2,7 @@
     "sqltools.connections": [
         {
             "mysqlOptions": {
-                "authProtocol": "default",
+                "authProtocol": "xprotocol",
                 "enableSsl": "Disabled"
             },
             "previewLimit": 50,
@@ -11,7 +11,8 @@
             "driver": "MySQL",
             "name": "test",
             "database": "learning_01",
-            "username": "Ray"
+            "username": "Ray",
+            "askForPassword": true
         }
     ]
 }

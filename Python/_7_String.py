@@ -41,6 +41,10 @@ str1[2:-2]                  # llo World, whats u
 str1[-1:-9]                 # Returns nothing, empty string ?
 str1[-9:-1]                 # whats up
 
+str1[1::2]                  # el ol,wasu?
+str1[2::-2]                 # lH
+str1[::-1]                  # ?pu tsw ,dlroW olleH
+str1[::2]                   # HloWrd ht p
 
 
 str1[0:6] * 5               # Hello Hello Hello Hello Hello

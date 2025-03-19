@@ -67,6 +67,11 @@ print(a[2:7])           # prints the elements of a from index 2 to 6
 print(a[-7:7])          # prints the elements of a from index -7 to 6
 print(a[3:-3])          # prints the elements of a from index 3 to -3
 
+print(a[::-1])          # prints the elements of a in reverse, ['Orange', 'Kiwi', 'cherry', 'banana']
+print(a[1::2])          # ['cherry', 'Orange']
+print(a[::2])           # ['banana', 'Kiwi']
+print(a[1::-2])         # ['cherry']
+
 
 
 len(a)                  # returns the length of a

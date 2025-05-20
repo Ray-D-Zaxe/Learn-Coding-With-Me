@@ -32,10 +32,13 @@ isinstance(a, int)              # Evalauted as True
 lst1 = [6, 9]
 lst2 = [6, 9]
 lst3 = lst1
+lst4 = lst1[:]
+print(f"id(lst1) : {id(lst1)}\nid(lst4) : {id(lst4)}\n")
 
 id(lst1)                        # returns address of lst1
 id(lst2)                        # address different from lst1
 id(lst3)                        # address same as lst1
+id(f":::{lst3}")
 
 lst1 is lst2                    # Evalauted as False
 lst2 is lst3                    # Evalauted as False

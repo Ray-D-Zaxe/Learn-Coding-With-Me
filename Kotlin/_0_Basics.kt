@@ -105,4 +105,17 @@ fun main() {
     // safe casting using (as?) operator, returns null if the cast fails
     var var_Cast_Safe: Any = 7
     var var_Cast_Safe_String: String? = var_Cast_Safe as? String
+
+    
+    // null
+    
+    // Using (?) after type makes that type nullable, i.e., allows it to be null
+    val val_Null_Int: Int? = null
+    var var_Null_Int: Int? = null
+
+    // Elvis Operator (?:) returns the argument at the right if the argument at the left evaluates to null
+    var var_Elvis_Int: Int = val_Null_Int ?: 7
+
+    // Not null Assertion (!!) forces NullPointerException (NPE) if the argument at the left evaluates to null
+    var var_Not_null_Assertion = var_Elvis_Int!!
 }

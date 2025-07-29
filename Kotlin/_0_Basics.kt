@@ -77,5 +77,32 @@ fun main() {
     // Use triple quotes (""") for multi-line strings, they preserve line breaks and indentation
     // Triple quotes can also be used to avoid escaping special characters
 
+
+
+    // (is) operator is used to check the type of the variable
+    if (var_Int is Char) {
+        println("var_Int is of type Char")
+    }
+    else {
+        println("var_Int is not of type Char")
+    }
+
+    // (!is) is used to check if the variable is not of a certain type
+    if (var_Int !is Char) {
+        println("var_Int is of type Char")
+    }
+
+
+
+    // Casting types
+    // Use toInt(), toByte(), toShort(), toLong(), toFloat(), toDouble(), toUInt(), toUByte(), toUShort(), toULong() methods for casting
+    var var_Cast_Float: Float = var_Int.toFloat()  // Casting Int to Float
+
+    // unsafe casting using (as) operator
+    var var_Cast_Unsafe: Any = "7"                  // Any type can hold any value, every non-nullable type inherits implicitly from Any
+    var var_Cast_String: String = var_Cast_Unsafe as String
     
+    // safe casting using (as?) operator, returns null if the cast fails
+    var var_Cast_Safe: Any = 7
+    var var_Cast_Safe_String: String? = var_Cast_Safe as? String
 }

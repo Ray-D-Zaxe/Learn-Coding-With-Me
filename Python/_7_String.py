@@ -1,8 +1,12 @@
 # String Operators
 
 str1 = "Hello World, whats up?"
+strm = '''This is a
+    multi-line string,
+    or is it?'''
 
 print(str1)
+print(strm)
 print()
 
 

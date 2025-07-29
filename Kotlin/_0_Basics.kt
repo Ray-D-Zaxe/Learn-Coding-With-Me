@@ -3,10 +3,10 @@ fun main() {
     // Kotline has several built-in data types
 
     // Numbers
-    var var_Int: Int = 42                       // Int: 32-bit signed integer, whole numbers from -2,147,483,648 to 2,147,483,647
-    var bar_Byte: Byte = 17                     // Byte: 8-bit signed integer, whole numbers from -128 to 127
-    var var_Short: Short = 30000                // Short: 16-bit signed integer, whole numbers from -32,768 to 32,767
-    var var_Long: Long = 1234567890123L         // Long: 64-bit signed integer, whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+    var var_Int: Int = 42                       // Int: 32-bit (4 Byte) signed integer, whole numbers from -2,147,483,648 to 2,147,483,647
+    var bar_Byte: Byte = 17                     // Byte: 8-bit (1 Byte) signed integer, whole numbers from -128 to 127
+    var var_Short: Short = 30000                // Short: 16-bit (2 Byte) signed integer, whole numbers from -32,768 to 32,767
+    var var_Long: Long = 1234567890123L         // Long: 64-bit (8 Byte) signed integer, whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
     
     // Kotline by defaults uses Int unless the size reaches the limit, then it uses Long
     var var_Default_Long = 123L                 // Default Long value, can be used without 'L' suffix if it fits in Int range
@@ -18,10 +18,10 @@ fun main() {
     println("Hex: $var_Hex, Binary: $var_Binary")
 
     // Every Integer Number has an unsigned version
-    var var_UInt: UInt = 42u                    // UInt: 32-bit unsigned, whole numbers from 0 to 4,294,967,295
-    var var_UByte: UByte = 17u                  // UByte: 8, unsigned, whole numbers from 0 to 255
-    var var_UShort: UShort = 30000u             // UShort: 16-bit unsigned, whole numbers from 0 to 65,535
-    var var_ULong: ULong = 1234567890123uL      // ULong: 64-bit unsigned, whole numbers from 0 to 18,446,744,073,709,551,615
+    var var_UInt: UInt = 42u                    // UInt: 32-bit (4 Byte) unsigned, whole numbers from 0 to 4,294,967,295
+    var var_UByte: UByte = 17u                  // UByte: 8 (1 Byte), unsigned, whole numbers from 0 to 255
+    var var_UShort: UShort = 30000u             // UShort: 16-bit (2 Byte) unsigned, whole numbers from 0 to 65,535
+    var var_ULong: ULong = 1234567890123uL      // ULong: 64-bit (8 Byte) unsigned, whole numbers from 0 to 18,446,744,073,709,551,615
 
     
     // Floating-point numbers
@@ -45,7 +45,37 @@ fun main() {
     var var_Double_NaN: Double = Double.NaN
     var var_Float_NaN: Float = Float.NaN
 
+
+    // Boolean values
+    var var_Bool1: Boolean = true               // Generally 8-bit (1 Byte)
+    var var_Bool2: Boolean = false
+    var var_Bool3: Boolean = 1 > 2              // Boolean expression, evaluates to false
+    
+
+    // Characters, generally 16 bits (2 Bytes), Unicode characters
     var var_Char: Char = 'K'
+    // Char requires single quotation ('')
+    // Use escaped characters for special characters,
+    /*
+        \n - New Line (LF), Line Feed
+        \t - Tab
+        \' - Single Quote
+        \" - Double Quote
+        \\ - Backslash
+        \r - Carriage Return (CR), used to return the cursor to the beginning of the line
+        \b - Backspace
+        \$ - Dollar Sign, used to escape dollar sign in string templates
+        \uFFXX - Unicode character, where XX is the hexadecimal code point, FF41 is lowercase 'a'
+     */
+
+    
+
+    // Strings, generally 16 bits (2 Bytes) per character
     var var_String: String = "Kotlin"
-    var var_Boolean: Boolean = true
+    // Strings can be defined using double quotes ("")
+    // Escape characters can be used in strings as well
+    // Use triple quotes (""") for multi-line strings, they preserve line breaks and indentation
+    // Triple quotes can also be used to avoid escaping special characters
+
+    
 }

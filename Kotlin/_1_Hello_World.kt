@@ -36,7 +36,10 @@ print(", sup mate?\n")
     
     // We can format our output using string templates
     println("x = $x, y = $y, a = $a, b = $b")
-    // using format specifiers with format()
-    println("x = %d, y = %d, a = %d, b = %d".format(x, y, a, b))
     
+    // Everything inside ${} is evaluated
+    println("x + y = ${x + y}, a + b = ${a + b}")
+
+    // Using format specifiers with format()
+    println("x = %d, y = %d, a = %d, b = %d".format(x, y, a, b))
 }

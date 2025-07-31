@@ -57,8 +57,8 @@ fun main() {
     a and b                             // evaluates to: a & b, 2
     a or b                              // evaluates to: a | b, 15
     a xor b                             // evaluates to: a ^ b, 13
-    (a shl 2                            // evaluates to: a << 2, 24
-    a shr )                             // evaluates to: a >> 2, 1
+    a shl 2                             // evaluates to: a << 2, 24
+    a shr                               // evaluates to: a >> 2, 1
     a ushr 2                            // evaluates to: a >>> 2, 1
     a.inv()                             // evaluates to: ~a, uses a.inv(), -7
 }

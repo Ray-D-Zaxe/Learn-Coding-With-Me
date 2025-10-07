@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "uUQf1poghT0=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\raydr\\DesKtoP_D\\Learn-Coding-With-Me\\C#\\_1_Hello_World\\_1_Hello_World\\_1_Hello_World.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\raydr\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.18\\microsoft.windowsdesktop.app.ref.8.0.18.nupkg.sha512",
+    "C:\\Users\\raydr\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.18\\microsoft.netcore.app.ref.8.0.18.nupkg.sha512",
+    "C:\\Users\\raydr\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.18\\microsoft.aspnetcore.app.ref.8.0.18.nupkg.sha512",
+    "C:\\Users\\raydr\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.18\\microsoft.netcore.app.host.win-x64.8.0.18.nupkg.sha512"
+  ],
+  "logs": []
+}

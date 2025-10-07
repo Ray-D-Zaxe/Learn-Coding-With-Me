@@ -1,0 +1,15 @@
+C:\Users\raydr\DesKtoP_D\Learn-Coding-With-Me\C#\_1_Hello_World\_1_Hello_World\bin\Debug\net8.0\_1_Hello_World.exe
+C:\Users\raydr\DesKtoP_D\Learn-Coding-With-Me\C#\_1_Hello_World\_1_Hello_World\bin\Debug\net8.0\_1_Hello_World.deps.json
+C:\Users\raydr\DesKtoP_D\Learn-Coding-With-Me\C#\_1_Hello_World\_1_Hello_World\bin\Debug\net8.0\_1_Hello_World.runtimeconfig.json
+C:\Users\raydr\DesKtoP_D\Learn-Coding-With-Me\C#\_1_Hello_World\_1_Hello_World\bin\Debug\net8.0\_1_Hello_World.dll
+C:\Users\raydr\DesKtoP_D\Learn-Coding-With-Me\C#\_1_Hello_World\_1_Hello_World\bin\Debug\net8.0\_1_Hello_World.pdb
+C:\Users\raydr\DesKtoP_D\Learn-Coding-With-Me\C#\_1_Hello_World\_1_Hello_World\obj\Debug\net8.0\_1_Hello_World.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\raydr\DesKtoP_D\Learn-Coding-With-Me\C#\_1_Hello_World\_1_Hello_World\obj\Debug\net8.0\_1_Hello_World.AssemblyInfoInputs.cache
+C:\Users\raydr\DesKtoP_D\Learn-Coding-With-Me\C#\_1_Hello_World\_1_Hello_World\obj\Debug\net8.0\_1_Hello_World.AssemblyInfo.cs
+C:\Users\raydr\DesKtoP_D\Learn-Coding-With-Me\C#\_1_Hello_World\_1_Hello_World\obj\Debug\net8.0\_1_Hello_World.csproj.CoreCompileInputs.cache
+C:\Users\raydr\DesKtoP_D\Learn-Coding-With-Me\C#\_1_Hello_World\_1_Hello_World\obj\Debug\net8.0\_1_Hello_World.sourcelink.json
+C:\Users\raydr\DesKtoP_D\Learn-Coding-With-Me\C#\_1_Hello_World\_1_Hello_World\obj\Debug\net8.0\_1_Hello_World.dll
+C:\Users\raydr\DesKtoP_D\Learn-Coding-With-Me\C#\_1_Hello_World\_1_Hello_World\obj\Debug\net8.0\refint\_1_Hello_World.dll
+C:\Users\raydr\DesKtoP_D\Learn-Coding-With-Me\C#\_1_Hello_World\_1_Hello_World\obj\Debug\net8.0\_1_Hello_World.pdb
+C:\Users\raydr\DesKtoP_D\Learn-Coding-With-Me\C#\_1_Hello_World\_1_Hello_World\obj\Debug\net8.0\_1_Hello_World.genruntimeconfig.cache
+C:\Users\raydr\DesKtoP_D\Learn-Coding-With-Me\C#\_1_Hello_World\_1_Hello_World\obj\Debug\net8.0\ref\_1_Hello_World.dll

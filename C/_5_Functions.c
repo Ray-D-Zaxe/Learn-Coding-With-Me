@@ -41,7 +41,7 @@ void scope_check(int w, int y);
 
 int factorial_recursion(int f);                     // Recursion
 
-implicit_ret_func();                                // Implicit return, should always be avoided, int is always assumed as return type in this case
+// implicit_ret_func();                                // Implicit return, should always be avoided, int is always assumed as return type in this case
 
 void callback_func(void (*)());                   // void (*)() acts as function pointer
 
@@ -127,9 +127,11 @@ int main(int argc, char *argv[]){
 
 
 
+    /*
     int r = implicit_ret_func();
     printf("r = implicit_ret_func() : %d\n", r);
     printf("\n");
+    */
 
 
 
@@ -244,10 +246,12 @@ int factorial_recursion(int f){
         return f * factorial_recursion(f - 1);
 }
 
+/*
 implicit_ret_func(){
     printf("implicit_ret_func() :");
     return 7;
 }
+*/
 
 void callback_func(void (*func)()){
     printf("callback_func(void (*func)()) : ");

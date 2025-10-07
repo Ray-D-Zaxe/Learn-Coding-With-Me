@@ -1,21 +1,4 @@
 {
-  "sqltools.connections": [
-    {
-      "mysqlOptions": {
-        "authProtocol": "xprotocol",
-        "enableSsl": "Disabled"
-      },
-      "previewLimit": 50,
-      "server": "localhost",
-      "port": 3306,
-      "driver": "MySQL",
-      "name": "test",
-      "database": "learning_01",
-      "username": "Ray",
-      "askForPassword": true
-    }
-  ],
-  "dotnet.defaultSolution": "ConsoleApp1.sln",
   "C_Cpp_Runner.cCompilerPath": "gcc",
   "C_Cpp_Runner.cppCompilerPath": "g++",
   "C_Cpp_Runner.debuggerPath": "gdb",

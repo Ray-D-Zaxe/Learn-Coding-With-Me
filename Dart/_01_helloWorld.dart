@@ -48,4 +48,7 @@ void main(){
   print(age2);
   print(pi2);
   print(isTrue);
+
+  int? nullAbleVar;
+  print(nullAbleVar);
 }

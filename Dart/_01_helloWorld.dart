@@ -28,4 +28,10 @@ void main(){
   // i.e, when the value of var is dependent on external factors
   
   // const keyword is used to create a compile time constant
+
+
+
+  print("Name : " + name);     // prints, Name : Yoo
+  print("Name : $name");       // prints, Name : Yoo
+  print("Age : $age");         // prints, Age : 26
 }

@@ -6,7 +6,7 @@ void main(){
   print(greet2("Yoo", 26));
   print(greet3("Yoo", 26));
 
-  var greeting2 = greet4(name : "Yoo", age :27);
+  var greeting2 = greet4(age :27, name : "Yoo");
   print(greeting2);
 
   var greeting3 = greet4(age : 26);

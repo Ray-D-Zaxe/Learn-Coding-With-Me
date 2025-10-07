@@ -34,4 +34,18 @@ void main(){
   print("Name : " + name);     // prints, Name : Yoo
   print("Name : $name");       // prints, Name : Yoo
   print("Age : $age");         // prints, Age : 26
+
+
+
+  // Types
+  String name2 = "Casenova";        // String var
+  name2 = "Rashputin";
+  final int age2 = 26;              // Integer final var
+  double pi2 = 3.14;                // Double var
+  const bool isTrue = true;         // Boolean const var
+
+  print(name2);
+  print(age2);
+  print(pi2);
+  print(isTrue);
 }

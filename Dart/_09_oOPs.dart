@@ -10,6 +10,22 @@ void main() {
   print(pizza);
   print(noodles.format());
   print(pizza.format());
+
+
+  var roast = MenuItem('veggie roast dinner', 12.49);
+  var kebab = MenuItem('plant kebab', 7.49);
+
+
+
+  // Generics
+  // We use <MenuItem> as the type for our generic class Collection
+  var foods = Collection<MenuItem>(
+    'MenuItems',
+    [noodles, pizza, roast, kebab]
+  );
+
+  var random = foods.randomItem();
+  print(random);
 }
 
 
@@ -53,5 +69,22 @@ class Pizza extends MenuItem {
   @override
   String toString() {
     return 'Instance of Pizza: $title, $price, $toppings';
+  }
+}
+
+// Generics
+class Collection<T> {
+  // Here <T>, represents types
+  String name;
+  // Here we specify that the tyoe of list much match the specified type of the Collection
+  List<T> data;
+
+  Collection(this.name, this.data);
+
+  T randomItem() {
+    // Using T here specifies that this function returns value of type T
+    data.shuffle();
+
+    return data[0];
   }
 }

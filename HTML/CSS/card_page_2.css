@@ -1,0 +1,73 @@
+/*
+rem: Root EM. Based on the browser's font size (usually 16px).
+If the user zooms, your layout scales.
+
+vh/vw: Viewport Height/Width. 100vh means exactly 100% of the screen height.
+*/
+
+
+.txt_1 {
+    font-size: 1rem;
+}
+
+
+.container_1 {
+    background-color: bisque;
+
+    box-sizing: border-box;
+    height: 15vh;
+    width: 95vw;
+
+    display: flex;
+
+    /* Horizontal by default */
+    justify-content: space-around;
+
+    /* Vertical by default */
+    align-items: center;;
+}
+
+.card_1 {
+    background-color: rgb(244, 146, 61);
+    height: 90%;
+    width: 31%;
+
+    display: flex;
+
+    border-radius: .6rem;
+
+    justify-content: center;
+}
+
+
+.container_2 {
+    background-color: rgb(163, 148, 128);
+
+    box-sizing: border-box;
+    height: 6rem;
+    width: 22.2rem;
+
+    display: flex;
+
+    /* Horizontal by default */
+    justify-content: space-around;
+
+    /* Vertical by default */
+    align-items: center;;
+}
+
+
+
+.txt_2 {
+    color: white;
+    /* Good for media, highly optimized */
+    font-size: 4vw;
+    /*
+        Good for control, not as optimized, cool for texts
+        font-size: clamp(1.5rem, 5vw, 3rem);
+    */
+    /* 
+        Not as good
+        font-size: calc(.5rem + 1vw);
+    */
+}

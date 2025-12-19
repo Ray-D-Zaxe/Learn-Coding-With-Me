@@ -1,0 +1,196 @@
+#div_1 {
+    background-color: red;
+}
+
+#div_2 {
+    background-color: red;
+    width: 300px;
+}
+
+#div_3 {
+    background-color: red;
+    width: 300px;
+    padding: 20px;
+}
+
+#div_4 {
+    background-color: red;
+    width: 300px;
+    padding: 20px;
+    border: 5px solid black;
+}
+
+#div_5 {
+    background-color: red;
+    width: 300px;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 20px;
+}
+
+#div_6 {
+    box-sizing: border-box;
+
+    background-color: red;
+    width: 300px;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 20px;
+
+    /* Total width remains 300px because of border-box */
+}
+
+#div_7 {
+    box-sizing: border-box;
+
+    background-color: red;
+    width: 300px;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 20px;
+
+    border-radius: 25px;
+}
+
+#div_8 {
+    box-sizing: border-box;
+
+    background-color: red;
+    width: 300px;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 20px;
+
+    border-radius: 25px;
+    box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.3);
+    /* 
+        box-shadow: a b c d;
+        a = horizontal offset
+        b = vertical offset
+        c = blur
+        d = spread
+     */
+}
+
+#div_9 {
+    box-sizing: border-box;
+
+    background-color: red;
+    width: 300px;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 20px;
+
+    border-radius: 25px;
+    box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.3);
+
+    transition: 3s;
+}
+
+#div_10 {
+    box-sizing: border-box;
+
+    background-color: red;
+    width: 300px;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 20px;
+
+    border-radius: 25px;
+    box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.3);
+}
+
+#div_10:hover {
+    box-shadow: 0 10px 14px 1px rgba(0, 0, 0, 0.6);
+
+    transition: 0.3s;
+}
+
+#div_11 {
+    box-sizing: border-box;
+
+    background-color: red;
+    width: 300px;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 20px;
+
+    border-radius: 25px;
+    position: relative;
+    /* The Anchor */
+}
+
+#div_12 {
+    position: absolute;
+    /* The Floating Element */
+    /* top: -10px;
+    right: -10px; */
+
+    box-sizing: border-box;
+
+    background-color: red;
+    width: 300px;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 20px;
+
+    border-radius: 25px;
+}
+
+#div_12:hover {
+    position: relative;
+}
+
+#div_13 {
+    box-sizing: border-box;
+
+    background-color: red;
+    width: 300px;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 20px;
+
+    border-radius: 25px;
+}
+
+#div_14 {
+    box-sizing: border-box;
+
+    background-color: red;
+    width: 20rem;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 20px;
+
+    border-radius: 25px;
+}
+
+
+#div_15 {
+    box-sizing: border-box;
+
+    background-color: red;
+    width: 70vw;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 20px;
+
+    border-radius: 25px;
+}
+
+/* .navbar {
+    display: flex;
+    justify-content: space-between;
+    /* Pushes items to the edges 
+    align-items: center;
+    /* Vertically centers items 
+    padding: 1rem 2rem;
+    background: #f4f4f4;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    /* Clean way to space items 
+    list-style: none;
+} */

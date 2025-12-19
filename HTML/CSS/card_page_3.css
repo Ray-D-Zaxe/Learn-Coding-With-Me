@@ -1,0 +1,105 @@
+.txt_1 {
+    font-size: 4vw;
+    padding: 15%;
+}
+
+.card_1 {
+    background-color: aquamarine;
+    border-radius: 3vw;
+    margin: 1%;
+}
+
+.container_1 {
+    box-sizing: border-box;
+    background-color: rebeccapurple;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1%;
+}
+
+.container_2 {
+    box-sizing: border-box;
+    background-color: royalblue;
+    display: grid;
+
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 0.5%;
+}
+
+.container_3 {
+    background-color: black;
+
+    display: grid;
+
+    grid-template-columns: 30vw 1fr 40%;
+    /* 
+        30vw gets rendered first
+        then 40% takes up the 40% of the container
+        and 1fr takes up the remaining space
+    */
+
+    grid-template-rows: 10vh 20vh;
+
+    padding: 0.5%;
+    gap: 0.5%;
+}
+
+.container_4 {
+    background-color: gray;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 times 1fr each */
+
+    padding: 1%;
+    gap: 1%;
+}
+
+.container_5 {
+    background-color: darkgrey;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+    /*
+    repeat(): Don't make me type 1fr five times.
+
+    auto-fit: 
+    Automatically decide how many columns fit based on the width.
+
+    minmax(300px, 1fr):
+    Each card must be at least 300px.
+    If there's extra room, grow them to fill 1fr.
+    */
+
+    padding: 1%;
+    /* gap: 1%; */
+}
+
+
+.card_2 {
+    background-color: lightblue;
+    border-radius: 3vw;
+    margin: 1%;
+
+    grid-column: 2 / 4;
+}
+
+.card_3 {
+    background-color: lightcyan;
+    border-radius: 3vw;
+    margin: 1%;
+
+    grid-column: 2;
+    grid-row: 3 / 5;
+}
+
+.card_4 {
+    background-color: beige;
+    border-radius: 3vw;
+    margin: 1%;
+
+    grid-column: 2 / 4;
+    grid-row: 5 / 7;
+}

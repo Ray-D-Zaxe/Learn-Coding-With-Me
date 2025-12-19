@@ -112,3 +112,36 @@ vh/vw: Viewport Height/Width. 100vh means exactly 100% of the screen height.
 
     gap: 2vw;
 }
+
+
+.card_2 {
+    background-color: purple;
+    border-radius: 2.7vw;
+    height: 90%;
+    width: 31%;
+    display: flex;
+    justify-content: center;
+    margin: 1%;
+}
+
+.card_3 {
+    background-color: royalblue;
+    border-radius: 2.7vw;
+    height: 90%;
+    width: 31%;
+    display: flex;
+    justify-content: center;
+    margin: 1%;
+    flex: 1 1 31%;
+    /* grow | shrink | basis (Try to be at least - wide before wrapping.) */
+}
+
+.container_6 {
+    background-color: chocolate;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}

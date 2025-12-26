@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/raydr/DesKtoP_D/Learn-Coding-With-Me/C",
-      "program": "c:/Users/raydr/DesKtoP_D/Learn-Coding-With-Me/C/build/Debug/outDebug",
+      "cwd": "c:/Users/raydr/DesKtoP_D/Learn-Coding-With-Me/C++",
+      "program": "c:/Users/raydr/DesKtoP_D/Learn-Coding-With-Me/C++/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

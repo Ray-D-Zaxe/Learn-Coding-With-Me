@@ -3,6 +3,7 @@ void main(){
     print(i);
   print("Yo");
 
+  // for loops with lists
   List<int> scores = [10, 20, 30, 40, 50];
   for (int i = 0; i < scores.length; i++) {
     print("The score is: ${scores[i]}");

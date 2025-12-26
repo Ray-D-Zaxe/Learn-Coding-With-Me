@@ -7,6 +7,10 @@
     background-color: aquamarine;
     border-radius: 3vw;
     margin: 1%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container_1 {
@@ -83,6 +87,10 @@
     border-radius: 3vw;
     margin: 1%;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     grid-column: 2 / 4;
 }
 
@@ -90,6 +98,10 @@
     background-color: lightcyan;
     border-radius: 3vw;
     margin: 1%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     grid-column: 2;
     grid-row: 3 / 5;
@@ -100,6 +112,43 @@
     border-radius: 3vw;
     margin: 1%;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     grid-column: 2 / 4;
     grid-row: 5 / 7;
+}
+
+
+
+.container_6 {
+    background-color: darkolivegreen;
+
+    display: grid;
+    grid-template-areas:
+        "head head head"
+        "side main main"
+        "foot foot foot" 
+    ;
+    grid-template-columns: 200px 1fr 1fr; /* width */
+    grid-template-rows: 80px 1fr 60px;
+
+    height: 95dvh;
+}
+
+header { grid-area: head; background: #ff4d4d; }
+nav    { grid-area: side; background: #4d94ff; }
+.main   { grid-area: main; background: #efe9e9; }
+footer { grid-area: foot; background: #333333; }
+
+@media (max-width: 600px) {
+  .container_6 {
+    grid-template-areas: 
+      "head"
+      "main"
+      "side"
+      "foot";
+    grid-template-columns: 1fr; /* Stack everything in 1 column */
+  }
 }

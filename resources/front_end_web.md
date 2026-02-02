@@ -1,0 +1,34 @@
+## ARIA, accessibility and SEO
+
+https://web.dev/learn/accessibility/welcome
+
+https://web.dev/learn/accessibility/aria-html
+
+https://www.socialmediatoday.com/news/8-of-the-most-important-html-tags-for-seo/574987/
+
+
+## CSS
+
+https://css-tricks.com/bem-101/
+
+https://css-tricks.com/building-a-scalable-css-architecture-with-bem-and-utility-classes/
+
+https://www.freecodecamp.org/news/css-naming-conventions-that-will-save-you-hours-of-debugging-35ce…
+
+https://codeguide.co/
+
+https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix
+
+https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::-webkit-progress-value
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::-moz-range-progress
+
+https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/
+
+https://nekocalc.com/px-to-rem-converter
+
+https://wix-ux.com/designing-the-perfect-button-e77ec1f32ee5?gi=10606517841a
+
+https://medium.com/@somameeta/best-practices-for-naming-ids-in-html-elements-32a929b5f6bc

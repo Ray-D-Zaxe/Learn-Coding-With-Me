@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Grid</title>
+        <style>
+            .container1 {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                gap: 4px;
+                background-color: lightslategrey;
+            }
+
+            .container2 {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+                gap: 4px;
+                background-color: lightslategrey;
+            }
+            .item1 {
+                display: flex;
+                height: 30px;
+                justify-content: center;
+                align-items: center;
+                background-color: darkslategrey;
+                color: white;
+            }
+
+            .item1:hover {
+                background-color: dodgerblue;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Using container1 and item1</h3>
+        <div class="container1">
+            <div class="item1">1</div>
+            <div class="item1">2</div>
+            <div class="item1">3</div>
+            <div class="item1">4</div>
+            <div class="item1">5</div>
+            <div class="item1">6</div>
+            <div class="item1">7</div>
+            <div class="item1">8</div>
+            <div class="item1">9</div>
+            <div class="item1">10</div>
+            <div class="item1">11</div>
+            <div class="item1">12</div>
+        </div>
+
+        <h3>Using container2 and card1</h3>
+        <div class="container2">
+            <div class="item1">1</div>
+            <div class="item1">2</div>
+            <div class="item1">3</div>
+            <div class="item1">4</div>
+            <div class="item1">5</div>
+            <div class="item1">6</div>
+            <div class="item1">7</div>
+            <div class="item1">8</div>
+            <div class="item1">9</div>
+            <div class="item1">10</div>
+            <div class="item1">11</div>
+            <div class="item1">12</div>
+        </div>
+    </body>
+</html>

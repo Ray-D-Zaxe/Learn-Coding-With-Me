@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>001 JS</title>
+    <style>
+        .copyContent {
+            background-color: hsla(180, 40%, 60%, 0.87);
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px auto;
+            height: 180px;
+            width: 420px;
+            font-size: xx-large;
+        }
+
+        .buttonDiv {
+            background-color: hsla(300, 40%, 60%, 0.87);
+            margin: 10px auto;
+            padding: 10px;
+            width: 700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: .5rem;
+        }
+
+        .buttonBtn {
+            padding: 10px;
+            margin: 10px;
+            display: block;
+            background-color: hsla(60, 50%, 60%, 0.87);
+            border-radius: 1.2vw;
+            border: none;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: x-large;
+        }
+
+        .buttonBtn:hover {
+            background-color: hsla(60, 81%, 72%, 0.87);
+        }
+
+        .buttonBtn:active {
+            background-color: hsla(60, 24%, 36%, 0.87);
+        }
+
+        .copiedClass{
+            background-color: hsla(0, 40%, 60%, 0.87);
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px auto;
+            height: 180px;
+            width: 420px;
+            font-size: xx-large;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="copyMe" class="copyContent">
+        This is the line that should be copied over. Right?
+    </div>
+    <div class="buttonDiv">
+        <button class="buttonBtn" onclick="copyCont()">Copy</button>
+        <button class="buttonBtn" onclick="delCont()">Remove</button>
+    </div>
+    <script>
+
+        let count = 0;
+        
+        function copyCont() {
+            let passage = `This is the ${count}th div.`;
+
+            let newDiv = document.createElement('div');
+            
+            newDiv.textContent = document.getElementById('copyMe').textContent;
+            newDiv.classList.add('copiedClass');
+            newDiv.innerText += passage;
+            
+            document.body.appendChild(newDiv);
+            
+            count++;
+        }
+
+        function delCont() {
+            // document.getElementsByClassName('copiedClass')[0].remove();
+            let lastElement = document.body.lastElementChild;
+            if (lastElement.classList.contains('copiedClass')) {
+                lastElement.remove();
+            } else {
+                alert('There are no divs to remove.');
+            }
+        }
+    </script>
+</body>
+</html>
